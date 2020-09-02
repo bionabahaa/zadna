@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="arabic" dir="rtl">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <title>Zadna</title>
+
+
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="../dist/css/popper.css">
+    <link href="../dist/css/bootstrap4-rtl.css" rel="stylesheet">
+    <link rel="stylesheet" href="../dist/fonts/fontawesome-free-5.0.8/web-fonts-with-css/css/fontawesome.css">
+    <!--  table css -->
+    <link rel="stylesheet" href="../dist/plugins/neighbordog-jquery-paginate-cea0026/src/jquery.paginate.css">
+    <!-- our style -->
+    <link rel="stylesheet" href="../dist/css/zadna-str.css">
+    <link rel="stylesheet" href="../dist/css/generalSet.css">
+    <link rel="stylesheet" href="../dist/css/cropTypes.css">
+    <link href="../dist/css/PopupStyle.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <div class="top row">
+        <div class="col-lg-6 col-sm-6 col-6 ">
+            <a class="navbar-brand" href="#"><img src="../dist/imgs/%D8%B2%D8%A7%D8%AF%D9%86%D8%A7-logo-white.png"
+                    style="width: 50px"></a>
+        </div>
+        <div class="col-lg-6 col-sm-6 col-6 icons-div">
+            <div class="icons">
+                <div class="dropdown float-right mr-4">
+                    <i class="fas fa-user dropdown-toggle icons-item text-white " role="button" id="dropdownMenuLink"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    </i>
+
+                    <div class="dropdown-menu mt-2 " aria-labelledby="dropdownMenuLink">
+                        <a href="req-tasks.html"><i class="fas fa-tasks mr-2 ml-2"></i> المهام</a>
+                        <div class="clearfix"></div>
+                        <hr>
+                        <a href="#"><i class="fas fa-info-circle mr-2 ml-2"></i> الشكاوي </a>
+                        <div class="clearfix"></div>
+                        <hr>
+                        <a href="#"><i class="fas fa-user-circle ml-2"></i> الصفحة الشخصية</a>
+                        <div class="clearfix"></div>
+                        <hr>
+                        <a href="#"> <i class="fas fa-sign-out-alt mr-2 ml-2"></i>تسجيل الخروج</a>
+                    </div>
+                </div>
+                <div class="dropdown float-right mr-4">
+                    <i class="fas fa-bell dropdown-toggle icons-item  bell yellow " role="button" id="notifi"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    </i>
+
+                    <div class="dropdown-menu mt-2 " aria-labelledby="notifi" style="width:250px">
+                        <div class="row">
+                            <div class="col-8">
+                                <span class="line ml-2">
+                                    <strong>تسجيل عميل جديد</strong>
+                                </span>
+                            </div>
+                            <div class="col-4">
+                                <span class="line small">
+                                    منذ 30 ث
+                                </span>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col-8">
+                                <span class="line ml-2">
+                                    <strong>اضافه معده للمخزن</strong>
+                                </span>
+                            </div>
+                            <div class="col-4">
+                                <span class="line small">
+                                    منذ 30 د
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="float-right mr-4">
+                    <i class="fas fa-info-circle text-white" style="cursor:pointer"></i>
+
+                </div>
+
+
+
+            </div>
+        </div>
+
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light bg-color ">
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item ">
+                    <a class="nav-link" href="#">الرئيسية<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="../settings/index%20.html">اعدادات عامة</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../fertilizing/fertilizing.html">عمليات زراعية</a>
+                </li>
+                <li class="nav-item  ">
+                    <a class="nav-link " href="../crew/crew.html">طاقم العمل</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../store/store.html">المخزن</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../experiments/experments.html">تجارب</a>
+                </li>
+                <li class="nav-item active ">
+                    <a class="nav-link" href="../maintaince/maintenance.html">صيانة</a>
+
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../mission/mission.html">تعين مهمة</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../costs/cost.html">تكاليف</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="../Seasons/Season.html">مواسم</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link " href="../Diseases/Diseases.html">الامراض</a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+    <!--بدايه اصناف المحصول-->
+    <section class="content cropType">
+        <div class="top-bar">
+
+            <h6> <img src="../dist/imgs/icons/syana.png" style="width: 30px;"> الاعطال </h6>
+        </div>
+        <div class="Tparent">
+
+            <div class="row ml-3 mr-3 mt-3 p-3 filter-search-box">
+                <div class="col-lg-10">
+
+                    <div class="row filter-res">
+
+
+                        <div class="col-lg-2 col-sm-12 col-md-12 col-12">
+                            <div>
+                                <label>النوع :</label>
+                            </div>
+                            <select class="form-control filter-form filter2 box2" filtercol="4">
+
+                                <option>الكل</option>
+                                <option> ابار</option>
+                                <option> جاري معدات</option>
+
+                            </select>
+                        </div>
+                        <div class="col-lg-2 col-sm-12 col-md-12 col-12">
+                            <div>
+                                <label>الحالة :</label>
+                            </div>
+                            <select class="form-control filter-form filter2 box2" filtercol="4">
+
+                                <option>الكل</option>
+                                <option> رفض</option>
+                                <option> قبل</option>
+                                <option> في الانتظار</option>
+
+                            </select>
+                        </div>
+                        <div class="col-lg-8 col-sm-12 col-md-12 col-12">
+                            <div>
+                                <label> تاريخ :</label>
+                            </div>
+                            من <input type="date" class="type-date">
+                            الى <input type="date" class="type-date">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 mt-3 col-sm-4 col-md-4 col-12 search-div">
+
+                </div>
+
+            </div>
+
+            <div class="row m-4">
+
+                <div class="float-left ">
+                    <button class="add-crepto mr-2 mb-2  " data-toggle="modal" data-target="#add-falut">أضافة عطل</button>
+                    <button class="export-excel mr-2 mb-2">أخراج كملف</button>
+                </div>
+
+            </div>
+
+            <div class="row m-3 justify-content-center ">
+                <div class="col-lg-10 ">
+                    <table class="table zadnatable">
+                        <thead>
+                            <tr>
+                                <th>الكود</th>
+                                <th>النوع</th>
+                                <th>الوصف </th>
+                                <th>تاريخ الظهور</th>
+                                <th>الحاله</th>
+                                <th class="actions">العمليات</th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+
+
+                            <tr>
+                                <td>12</td>
+                                <td>ابار</td>
+                                <td>بئر</td>
+                                <td>15-8-1998</td>
+                                <td><i class="fas fa-times-circle" style="color: red"></i><span hidden>لم يتم</span></td>
+                                <td class="query-td">
+                                    <i class="fas fa-eye view-row text-dark" title="View" data-toggle="modal"
+                                        data-target="#add-falut"></i>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td>12</td>
+                                <td>ابار</td>
+                                <td>بئر</td>
+                                <td>15-8-1998</td>
+                                <td><i class="fas fa-check-circle" style="color: greenyellow"></i><span hidden>تم</span></td>
+                                <td class="query-td">
+                                    <i class="fas fa-eye view-row text-dark" title="View" data-toggle="modal"
+                                        data-target="#add-falut"></i>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td>12</td>
+                                <td>ابار</td>
+                                <td>بئر</td>
+                                <td>15-8-1998</td>
+                                <td><i class="fas fa-hourglass-half" style="color: rgb(241, 255, 47)"></i><span hidden>جاري
+                                        التنفيذ</span></td>
+                                <td class="query-td">
+                                    <i class="fas fa-eye view-row text-dark" title="View" data-toggle="modal"
+                                        data-target="#add-falut"></i>
+                                </td>
+
+                            </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- اضافة عطل  -->
+    <div id="add-falut" class="modal fade " role="dialog" currtable="11" view-chat="view-notes">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content modalbg-add">
+                <div class="modal-header d-flex flex-row-reverse">
+                    <button type="button" class="close" data-dismiss="modal">×</button>
+                    <h5 class="modal-title text-center "> عطل</h5>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group row">
+                            <label for="code" class="col-sm-4 col-form-label">الكود</label>
+                            <div class="col-sm-8">
+                                <input type="text" class="form-control" id="code">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="type" class="col-sm-4 col-form-label">النوع</label>
+                            <div class="col-sm-8">
+                                <select class="form-control">
+                                    <option>ابار</option>
+                                    <option>معدات</option>
+                                </select>
+
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="desc" class="col-sm-4 col-form-label">الوصف</label>
+                            <div class="col-sm-8">
+                                <textarea class="form-control" id="desc"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="date" class="col-sm-4 col-form-label">تاريخ الظهور</label>
+                            <div class="col-sm-8">
+                                <input type="date" class="form-control" id="date">
+                            </div>
+                        </div>
+                    </form>
+
+                    <div class="stauts-change mt-4">
+                        <div class="form-group row">
+                            <label for="date" class="col-sm-4 col-form-label">حالة العطل</label>
+                            <div class="col-sm-8">
+
+                                <div class="custom-control custom-radio ">
+                                    <input type="radio" id="done" name="customRadioInline1" class="custom-control-input">
+                                    <label class="custom-control-label" for="done">رفض</label>
+                                </div>
+                                <div class="custom-control custom-radio ">
+                                    <input type="radio" id="canceld" name="customRadioInline1" class="custom-control-input">
+                                    <label class="custom-control-label" for="canceld">قبول</label>
+                                </div>
+                                <div class="custom-control custom-radio ">
+                                    <input type="radio" id="wait" name="customRadioInline1" class="custom-control-input">
+                                    <label class="custom-control-label" for="wait">في الانتظار</label>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <a href="#" id="saveDate" class="danger btn btn-primary SaveNote ">حفظ</a>
+                    <a href="#" data-dismiss="modal" aria-hidden="true" class="btn btn-danger ">الغاء</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <!-- Scripts -->
+    <script src="../dist/jquery/jquery-3.3.1.min.js"></script>
+    <script src="../dist/plugins/Export-Html-Table-To-Excel-Spreadsheet-using-jQuery-table2excel/dist/jquery.table2excel.js"></script>
+    <script src="../dist/js/popper.min.js"></script>
+    <script src="../dist/js/bootstrap4-rtl.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl"
+        crossorigin="anonymous"></script>
+    <!--<script src="dist/plugins/datatables.net-bs/js/datatable.js"></script>-->
+    <script src="../dist/plugins/neighbordog-jquery-paginate-cea0026/src/jquery.paginate.js"></script>
+    <script src="../dist/js/datatable.js"></script>
+    <script src="../dist/js/model.js"></script>
+
+    <script src="../dist/js/Taction.js"></script>
+    <script src="../dist/js/maintenance-current.js"></script>
+
+</body>
+
+</html>

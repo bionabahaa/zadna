@@ -1,0 +1,38 @@
+  @inject('healper', 'App\Http\Controllers\BladeController')
+
+
+  if($this->_checkPermission(3,5))
+
+@if($healper->check_permission(7,6))
+ <h1 style="text-align: center;color: #28a745; margin-top: 150px">??? ???? ?????? ?????? ????? ????? ??????</h1>
+
+
+
+
+ <div class="col-lg-8 col-sm-12 col-md-12 col-12">
+                                <div>
+                                    <label>???? ????????? :</label>
+                                </div>
+                                ?? <input  name="from" id="from" type="date" class="type-date">
+                                ??? <input name="to" id="to"  type="date" class="type-date">
+                            </div>
+
+
+
+  <span class="btn btn-dark filter_but" style="height: 45px;border-radius: 21%;" onclick="filter('DataTable_temporary_user','setting/dataTableTemporery')" >???</span>
+
+
+
+var filter=function ($table,$url) {
+    var status=$('#status').val();
+    var from=$('#from').val();
+    var to=$('#to').val();
+
+    var url=urls.base_url+'/'+$url+'?status='+status+'&date_from='+from+'&date_to='+to;
+    dataTable_search($table,url,tableColumn);
+
+}
+
+/?arr[]='.$arr.'
+public static $del_col="id,crop_id,code,created_at";
+ $this->passing_data['arr'] = Crops::$del_col;

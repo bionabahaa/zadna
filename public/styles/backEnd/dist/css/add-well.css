@@ -1,0 +1,22 @@
+.add-well-table .form-control{width: 70%;}
+
+.modal .modal-title{
+    color: #fc782e !important;
+    background: none;
+}
+
+.td-input{
+    border: none ;
+    background: #fff !important;
+}
+
+.save-edit:hover{
+    color: #2ca224;
+    cursor: pointer;
+}
+
+ .span{
+    color: #fc782e ;
+    font-weight: bold;
+}
+

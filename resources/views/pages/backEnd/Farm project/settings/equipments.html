@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html lang="arabic" dir="rtl">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <title>Zadna</title>
+
+
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="../dist/css/popper.css">
+    <link href="../dist/css/bootstrap4-rtl.css"rel="stylesheet">
+    <link rel="stylesheet" href="../dist/fonts/fontawesome-free-5.0.8/web-fonts-with-css/css/fontawesome.css">
+    <!--  table css -->
+    <link rel="stylesheet" href="../dist/plugins/neighbordog-jquery-paginate-cea0026/src/jquery.paginate.css">
+
+    <!-- our style -->
+    <link rel="stylesheet" href="../dist/css/zadna-str.css">
+    <link rel="stylesheet" href="../dist/css/generalSet.css">
+    <link rel="stylesheet" href="../dist/css/cropTypes.css">
+    <link rel="stylesheet" href="../dist/css/PopupStyle.css">
+
+
+
+
+</head>
+<body>
+<div class="top row">
+    <div class="col-lg-6 col-sm-6 col-6 ">
+        <a class="navbar-brand" href="#"><img src="../dist/imgs/%D8%B2%D8%A7%D8%AF%D9%86%D8%A7-logo-white.png" style="width: 50px"></a>
+    </div>
+    <div class="col-lg-6 col-sm-6 col-6 icons-div">
+        <div class="icons ">
+            <a href="#"> <img src="../dist/imgs/logout.png" width="30px"></a>
+            <a href="#"> <i class="fas fa-bell"></i></a>
+
+        </div>
+    </div>
+
+</div>
+<nav class="navbar navbar-expand-lg navbar-light bg-light bg-color ">
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item ">
+                <a class="nav-link" href="#">الرئيسية<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#">اعدادات عامة</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">عمليات زراعية</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " href="#">طاقم العمل</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="#">المخزن</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">تجارب</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " href="#">صيانة</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="#">تعين مهمة</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">تكاليف</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " href="#">مواسم</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<!--بدايه اصناف المحصول-->
+<section class="content cropType">
+    <div class="top-bar">
+        <h6>اعدادات عامه > معدات</h6>
+    </div>
+    <div class="Tparent">
+
+        <div class="row ml-3 mr-3 mt-3 p-3 filter-search-box">
+            <div class="col-lg-10">
+                <!--
+                            <div class="row">
+                             <div class="col-lg-2">
+                               <label>النوع :</label>
+                             </div>
+                                 <div class="col-lg-3">
+                               <label>فترة الشراء :</label>
+                             </div>
+                            </div>
+                -->
+                <div class="row filter-res">
+
+                    <div class="col-lg-2 col-sm-12 col-md-12 col-12">
+                        <div >
+                            <label>النوع :</label>
+                        </div>
+                        <select class="form-control filter-form filter1" >
+
+                            <option>الكل</option>
+                            <option> بلح1</option>
+                            <option> بلح2</option>
+                        </select>
+                    </div>
+<!--
+
+                    <div class="col-lg-8 col-sm-12 col-md-12 col-12">
+                        <div >
+                            <label>فترة الشراء :</label>
+                        </div>
+                        من <input type="date" class="type-date">
+                        الى <input type="date" class="type-date">
+                    </div>
+-->
+
+
+
+
+                </div>
+
+
+
+            </div>
+            <div class="col-lg-2 mt-3 col-sm-4 col-md-4 col-12">
+                <label class="search-icon">  <input type="text" class="search" id="myInput"></label>
+
+            </div>
+
+        </div>
+
+        <div class="row m-4">
+
+
+            <div class="float-left ">
+
+                <button class="add-crepto mr-2 mb-2"  data-toggle="modal" data-target="#exampleModalLong">أضافة  مُعَدَّة</button>
+
+
+                <button class="upload-excel mr-2 mb-2 ">أدخال عن طريق ملف</button>
+
+
+                <button class="export-excel mr-2 mb-2">أخراج كملف اكسيل</button>
+
+
+
+            </div>
+
+        </div>
+
+        <div class="row m-3 justify-content-center ">
+            <div class="col-lg-10 ">
+
+                <table class="table   zadnatable ">
+                    <thead >
+                    <tr >
+                        <th>الكود</th>
+                        <th>النوع</th>
+                        <th>الاسم</th>
+                        <th>سعر الوحدة</th>
+                   
+                        <th>العمليات</th>
+
+                    </tr>
+                    </thead>
+                    <tbody>
+
+
+                    <tr rowId="1">
+                        <td>1</td>
+                        <td>بلح1</td>
+                        <td>الصنف1</td>
+                        <td>بلح1</td>
+                    
+                        <td class="query-td"> <i class="fas fa-trash-alt delete-icon" title="Delete"></i><i class="fas fa-eye view-row" title="View" data-toggle="modal" data-target="#ViewMatrial"></i></td>
+
+
+                    </tr>
+                    <tr rowId="2">
+                        <td>1</td>
+                        <td>بلح1</td>
+                        <td>الصنف1</td>
+                        <td>بلح1</td>
+                       
+                        <td class="query-td"> <i class="fas fa-trash-alt delete-icon" title="Delete"></i><i class="fas fa-eye view-row" title="View" data-toggle="modal" data-target="#ViewMatrial"></i></td>
+
+                    </tr>
+
+                    </tbody>
+
+                </table>
+            </div>
+
+
+
+
+        </div>
+
+
+    </div>
+
+</section>
+<!--نهايه اصناف المحصول-->
+
+<!-- popup-->
+<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content modalbg">
+            <div class="modal-header modal-border">
+                <h5 class="modal-title" >اضافة مُعَدَّة</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body modal-space">
+                <div class="table-responsive">
+                    <table class="table tableborder">
+
+                        <thead>
+                        <tr>
+
+                            <th scope="col">الكود</th>
+                            <th scope="col">النوع</th>
+                            <th scope="col">اسم المُعَدَّة</th>
+                            <th scope="col">السعر</th>
+                            
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+
+                            <td  class="InputNum" ><div class="form-group InputGroup">
+                                <input type="number" class="form-control numric" min="0">
+
+                            </div></td>
+                            <td class="InputNum"><div id="accordion">
+                                <div class="card cards">
+                                    <div class="card-header cardPadding" id="headingOne">
+
+                                        <h5 class="mb-0">
+                                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                <i class="fas fa-angle-down arrow"></i>
+                                            </button><label class="selected-value inputType">None</label>
+                                        </h5>
+                                    </div>
+
+                                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                                        <div class="card-body cb0dy">
+                                            <ul id="myUL" class="itemGroup ">
+                                                <li class="item">wewe</li>
+
+                                                <li> <a  href="#" data-toggle="modal" data-target="#exampleModalLong2" >اضافة نوع +</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div></td>
+                            <td  class="InputNum"><div class="form-group InputGroup">
+                                <input type="text" class="form-control numric name" min="0">
+
+                            </div></td>
+                            <td  class="InputNum"><div class="form-group InputGroup">
+                                <input type="number" class="form-control numric price" min="0">
+
+                            </div></td>
+                        </tr>
+
+                        </tbody>
+                    </table>
+                    <table class="table tableborder">
+
+                        <thead>
+                        <tr>
+
+                            <th scope="col">الكمية</th>
+                            <th scope="col">تاريخ الشراء</th>
+                            <th scope="col">خامات التشغيل</th>
+                            <th scope="col">القوة</th>
+                            
+                             
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+
+                            <td  class="InputNum"><div class="form-group InputGroup">
+                                <input type="number" class="form-control numric" min="0">
+
+                            </div></td>
+                            <td  class="InputNum" ><div class="form-group InputGroup">
+                                <input type="date" class="form-control numric buy-date" >
+
+                            </div>
+                            </td>
+                            <td class="InputNum"><div id="accordion2">
+                                <div class="card cards">
+                                    <div class="card-header cardPadding" id="headingOne2">
+                                        <h5 class="mb-0">
+                                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne12" aria-expanded="true" aria-controls="collapseOne">
+                                                <i class="fas fa-angle-down arrow"></i>
+                                            </button>
+                                        </h5>
+                                    </div>
+
+                                    <div id="collapseOne12" class="collapse" aria-labelledby="headingOne2" data-parent="#accordion2">
+                                        <div class="card-body cb0dy">
+                                            <ul id="myUL2" class="itemGroup">
+                                                <li ><input type="checkbox" style="float:left" id="chk"/><span for="chk" >wewe</span></li>
+                                                <li> <a  href="#" data-toggle="modal" data-target="#add-kind" >اضافة صنف +</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div></td>
+                                 <td  class="InputNum"><div class="form-group InputGroup">
+                                    <select  class="form-control numric" >
+                                        <option>22 حصان </option>
+                                        <option>55 حصان </option>
+                                    </select>
+
+                                     </div></td>
+                            
+                        </tr>
+
+                        </tbody>
+                    </table>
+                    <table class="table tableborder">
+
+                        <thead>
+                        <tr>
+                            
+                             <th scope="col">معدل الاستهلاك/ساعة</th>
+                            <th scope="col">معدل الانتاج/ساعة</th>
+                            <th scope="col">معدل الاهلاك/سنة</th>
+                            <th scope="col">الموديل</th> 
+                            
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+
+                            <td class="InputNum" ><div class="form-group InputGroup">
+                                <input type="number" class="form-control numric" min="0">
+
+                            </div></td>
+                            <td class="InputNum"><div class="form-group InputGroup2">
+                                <input type="number" class="form-control numric" min="0">
+
+                            </div></td>
+                              <td class="InputNum"><div class="form-group InputGroup2">
+                                <input type="number" class="form-control numric" min="0">
+
+                            </div></td>
+                            
+                             <td class="InputNum" ><div class="form-group InputGroup">
+                                <input type="text" class="form-control numric" min="0">
+
+                            </div></td>
+                           
+                        </tr>
+
+                        </tbody>
+                    </table>
+                    
+                    <table class="table tableborder">
+
+                        <thead>
+                        <tr>
+
+                            <th scope="col">مواصفات</th>
+                           
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+
+
+
+                            <td class="InputNum" ><div class="form-group InputGroup">
+                                    <input type="text" class="form-control numric" min="0" id="E-consumption">
+
+                                </div></td>
+                          
+                        </tr>
+
+                        </tbody>
+                    </table>
+                    
+                                      
+    <div class="Tparent">
+         <div class=" row m-4">
+            <h5 class="col-md-5">الصيانة الدورية</h5>
+            <div class="col-md-2 offset-4">
+                <button class="add-crepto addNewDate  " data-toggle="modal" data-target="#addDateModal" >أضافة </button>
+            </div>
+
+            <hr>
+        </div>
+        <div class="row m-4">
+            <div class="col-lg-12 col-sm-12 col-12 ">
+
+                <div >
+                    <table class="table  table-bordered table2 mainTable" tableId="0">
+                        <thead style="text-align: center;background: #fff;">
+                        <tr>
+                            <th scope="col">الكود</th>
+                            <th scope="col">الوصف</th>
+                            <th scope="col">التاريخ</th>
+                            <th scope="col">التكرار</th>
+                            <th scope="col">المده</th>
+                            <th scope="col"> <i class="fas fa-bars"></i>  </th>
+                        </tr>
+                        </thead>
+
+                        <tbody style="background: #fff;">
+                        <tr >
+                            <td>444</td>
+                            <td >
+                                <div class="form-group InputGroup">
+                                    <input type="text" class="form-control td-input" disabled>
+
+                                </div>
+                            </td>
+                            <td >
+                                <div class="form-group InputGroup">
+                                    <input type="text" class="form-control  td-input" disabled >
+
+                                </div>
+                            </td>
+                            <td >
+                                <div class="form-group InputGroup">
+                                    <input type="text" class="form-control td-input" disabled>
+
+                                </div>
+                            </td>
+                            <td >
+                                <div class="form-group InputGroup">
+                                    <input type="text" class="form-control td-input" disabled>
+
+                                </div>
+                            </td>
+
+                            <td > <i class="fas fa-trash-alt delete-icon" title="Delete"  data-toggle="modal" data-target="#deletemodal"></i>
+
+                                <i  class="fas fa-edit edit-row" title="View" ></i>
+                                <i class="fas fa-check-square save-edit" hidden></i>
+
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+                </div>
+            </div>
+            <div class="modal-footer footer-border">
+                <button type="button" class="btn close-btn" data-dismiss="modal">غلق</button>
+                <button type="button" class="btn save-btn" id="saveMatrial">حفظ</button>
+            </div>
+        </div>
+    </div>
+</div>
+     <div id="addDateModal" class="modal fade" role="dialog" currTable>
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content modalbg-add">
+                <div class="modal-header d-flex flex-row-reverse">
+                    <button type="button" class="close" data-dismiss="modal">×</button>
+                    <h5 class="modal-title text-center ">اضافه موعد صيانه</h5>
+                </div>
+                <div class="modal-body">
+                    <div class="row mb-4" >
+
+                        <div class="col-12">
+                            <label class="col-4" for="descrep">الوصف:</label>
+                            <input type="text" id="descrep" class="col-val border-style col-6 ">
+
+                        </div>
+                    </div>
+                    <div class="row mb-4">
+
+                        <div class="col-12">
+                            <label class="col-4" for="date">التاريخ:</label>
+                            <input type="date" id="date" class="col-val border-style col-6 ">
+                        </div>
+                    </div>
+
+                    <div class="row mb-4">
+
+                        <div class="col-12">
+                            التكرار:
+                            <label class="span col-2 offset-1" for="every">كل</label>
+                            <input type="text" id="every" class=" col-val border-style col-2">
+                            <label class="span col-2" for="time">لمده</label>
+                            <input type="text" id="time" class=" col-val border-style col-2">
+
+                        </div>
+
+                    </div>
+
+                    <br>
+
+                </div>
+                <div class="modal-footer">
+                    <a href="#" id="saveDate" class="danger btn btn-primary btnSave ">حفظ</a>
+                    <a href="#" data-dismiss="modal" aria-hidden="true" class="btn btn-danger ">الغاء</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+<!--modal2-->
+<div class="modal fade" id="exampleModalLong2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content modalbg-add">
+            <div class="modal-header header-border">
+                <h5 class="modal-title" id="exampleModalLongTitle">اضافة نوع</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body ">
+
+                <div class="form-group center" >
+
+                    <input type="text"  id="name-text" class="textStyle">
+                </div>
+
+            </div>
+            <div class="modal-footer footer-border">
+
+                <button type="button" class="btn add-btn" data-dismiss="modal" aria-label="Close" value="اضافه" id="addgroup">اضافة</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--modal3-->
+<div class="modal fade" id="add-kind" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle2" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content modalbg-add">
+            <div class="modal-header header-border">
+                <h5 class="modal-title" id="exampleModalLongTitle2">اضافة صنف</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body ">
+
+                <div class="form-group center">
+
+                    <input type="text" id="name-text-kind" class="textStyle">
+                </div>
+
+            </div>
+            <div class="modal-footer footer-border">
+
+                <button type="button" class="btn add-btn" data-dismiss="modal" aria-label="Close" value="اضافه" id="add-item">اضافة</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="ViewMatrial" viewrow tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content modalbg">
+            <div class="modal-header modal-border">
+                <h5 class="modal-title" >تفاصيل المُعَدَّة
+ </h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body modal-space">
+                <div class="table-responsive">
+
+                    <table class="table tableborder ">
+
+                        <thead>
+                        <tr>
+
+                            <th scope="col">النوع</th>
+                             <th scope="col">الموديل</th> 
+                            <th scope="col">اسم المُعَدَّة</th>
+                            <th scope="col">السعر</th>
+                            
+                             
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+
+                            <td class="InputNum">
+                                <input type="text" class="edit-type matrialtype form-control pl-2" disabled>
+
+                            </td>
+                            <td class="InputNum"><div class="form-group InputGroup">
+                                <input type="text" class="form-control numric " disabled>
+
+                            </div></td>
+                            
+                            <td class="InputNum"><div class="form-group InputGroup">
+                                <input type="text" class="form-control numric name" disabled>
+
+                            </div></td>
+                            <td class="InputNum"><div class="form-group InputGroup">
+                                <input type="text" class="form-control numric price" disabled>
+
+                            </div></td>
+                        </tr>
+
+                        </tbody>
+                    </table>
+
+                    <table class="table tableborder">
+
+                        <thead>
+                        <tr>
+
+                           
+                            
+                                   <th scope="col">القوة</th>
+                            <th scope="col">الكمية</th>
+                            <th scope="col">تاريخ الشراء</th>
+                            <th scope="col">خامات التشغيل</th>
+                            
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+
+                            <td  class="InputNum"><div class="form-group InputGroup">
+                                    <select  class="form-control numric" disabled >
+                                        <option>22 حصان </option>
+                                        <option>55 حصان </option>
+                                    </select>
+
+                                </div></td>
+
+                            <td  class="InputNum"><div class="form-group InputGroup">
+                                    <input type="number" class="form-control numric" min="0"  disabled>
+
+                                </div></td>
+                            <td  class="InputNum" ><div class="form-group InputGroup">
+                                    <input type="date" class="form-control numric buy-date"  disabled>
+
+                                </div>
+                            </td>
+
+                            <td class="InputNum equp"><div id="accordion3">
+                                    <div class="card cards">
+                                        <div class="card-header cardPadding" id="headingOne3">
+                                            <h5 class="mb-0">
+                                                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne13" aria-expanded="true" aria-controls="collapseOne">
+                                                    <i class="fas fa-angle-down arrow"></i>
+                                                </button>
+                                            </h5>
+                                        </div>
+
+                                        <div id="collapseOne13" class="collapse" aria-labelledby="headingOne2" data-parent="#accordion2" style="">
+                                            <div class="card-body cb0dy">
+                                                <ul id="edit-myUL2" class="itemGroup">
+                                                    
+                                                            <li><input type="checkbox" style="float:left" class="edit-chk numric" value="2" disabled=""><span for="chk">زيت</span></li>
+                                                            
+                                                            <li><input type="checkbox" style="float:left" class="edit-chk numric" value="3" disabled=""><span for="chk">جازولين</span></li>
+                                                            
+                                                            <li><input type="checkbox" style="float:left" class="edit-chk numric" value="4" disabled=""><span for="chk">كيروسين</span></li>
+                                                            
+                                                            <li><input type="checkbox" style="float:left" class="edit-chk numric" value="6" disabled=""><span for="chk">بنزين</span></li>
+                                                            
+                                                            <li><input type="checkbox" style="float:left" class="edit-chk numric" value="7" disabled=""><span for="chk">سولار</span></li>
+                                                            
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </td>
+
+                        </tr>
+
+                        </tbody>
+                    </table>
+
+                   <table class="table tableborder">
+
+                        <thead>
+                        <tr>
+                            
+                             <th scope="col">معدل الاستهلاك/ساعة</th>
+                            <th scope="col">معدل الانتاج/ساعة</th>
+                            <th scope="col">معدل الاهلاك/سنة</th>
+                         
+                            
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+
+                            <td class="InputNum" ><div class="form-group InputGroup">
+                                <input type="number" class="form-control numric" min="0" disabled>
+
+                            </div></td>
+                            <td class="InputNum"><div class="form-group InputGroup2">
+                                <input type="number" class="form-control numric" min="0" disabled>
+
+                            </div></td>
+                              <td class="InputNum"><div class="form-group InputGroup2">
+                                <input type="number" class="form-control numric" min="0" disabled>
+
+                            </div></td>
+                            
+                            
+                           
+                        </tr>
+
+                        </tbody>
+                    </table>
+                    
+                    <table class="table tableborder">
+
+                        <thead>
+                        <tr>
+
+                            <th scope="col">مواصفات</th>
+                           
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+
+
+
+                            <td class="InputNum" ><div class="form-group InputGroup">
+                                    <input type="text" class="form-control numric" min="0"  disabled>
+
+                                </div></td>
+                          
+                        </tr>
+
+                        </tbody>
+                    </table>
+                    
+                                      
+    <div class="Tparent">
+         <div class=" row m-4">
+            <h5 class="col-md-5">الصيانة الدورية</h5>
+            <div class="col-md-2 offset-4">
+                <button class="add-crepto addNewDate  " data-toggle="modal" data-target="#addDateModal" >أضافة </button>
+            </div>
+
+            <hr>
+        </div>
+        <div class="row m-4">
+            <div class="col-lg-12 col-sm-12 col-12 ">
+
+                <div >
+                    <table class="table  table-bordered table2 mainTable" tableId="0">
+                        <thead style="text-align: center;background: #fff;">
+                        <tr>
+                            <th scope="col">الكود</th>
+                            <th scope="col">الوصف</th>
+                            <th scope="col">التاريخ</th>
+                            <th scope="col">التكرار</th>
+                            <th scope="col">المده</th>
+                            <th scope="col"> <i class="fas fa-bars"></i>  </th>
+                        </tr>
+                        </thead>
+
+                        <tbody style="background: #fff;">
+                        <tr >
+                            <td>444</td>
+                            <td >
+                                <div class="form-group InputGroup">
+                                    <input type="text" class="form-control td-input" disabled>
+
+                                </div>
+                            </td>
+                            <td >
+                                <div class="form-group InputGroup">
+                                    <input type="text" class="form-control  td-input" disabled >
+
+                                </div>
+                            </td>
+                            <td >
+                                <div class="form-group InputGroup">
+                                    <input type="text" class="form-control td-input" disabled>
+
+                                </div>
+                            </td>
+                            <td >
+                                <div class="form-group InputGroup">
+                                    <input type="text" class="form-control td-input" disabled>
+
+                                </div>
+                            </td>
+
+                            <td > <i class="fas fa-trash-alt delete-icon" title="Delete"  data-toggle="modal" data-target="#deletemodal"></i>
+
+                                <i  class="fas fa-edit edit-row" title="View" ></i>
+                                <i class="fas fa-check-square save-edit" hidden></i>
+
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+                </div>
+            </div>
+            <div class="modal-footer footer-border">
+                <button type="button" class="btn edit-btn">تعديل</button>
+                <button type="button" class="btn save-btn hide" id="save-edit" hidden >حفظ</button>
+                <button type="button" class="btn close-btn" data-dismiss="modal">غلق</button>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="deletemodal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content modalbg-add">
+            <div class="modal-header d-flex flex-row-reverse">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title ">حذف</h4>
+            </div>
+            <div class="modal-body">
+                <p>حذف نوع محصول؟</p>
+            </div>
+            <div class="modal-footer">
+                <a href="#" id="btnYes" class="danger btn btn-primary ">نعم</a>
+                <a href="#" data-dismiss="modal" aria-hidden="true" class="btn btn-danger ">لا</a>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<!-- Scripts -->
+<script src="../dist/jquery/jquery-3.3.1.min.js"></script>
+<script src="../dist/js/popper.min.js"></script>
+
+<script src="../dist/js/bootstrap4-rtl.js"></script>
+<script src="../dist/js/model.js"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+<script src="../dist/plugins/datatables.net-bs/js/datatable.js"></script>
+<script src="../dist/plugins/neighbordog-jquery-paginate-cea0026/src/jquery.paginate.js"></script>
+
+<script src="../dist/js/datatable.js"></script>
+<script src="../dist/js/Taction.js"></script>
+<script src="../dist/js/material.js"></script>
+
+
+<!--js set day date in the input -->
+<script>
+
+
+</script>
+
+
+</body>
+</html>

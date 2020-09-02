@@ -1,0 +1,76 @@
+.table-bordered td, .table-bordered th{
+    border: 1px solid #030d17 !important;
+}
+
+.crop_body{
+    margin-top: 80px;
+}
+.modelTitle{
+    font-weight: bolder;
+    margin: 5px 0 44px;
+}
+
+.crop_code{
+    color: #464242;
+    background: #f5f0f0;
+    font-weight: bold;
+    cursor: pointer;
+    margin-right: 19px;
+    margin-top: 43px;
+    border-radius: 50%;
+    padding: 8px;
+
+}
+
+.irrig_des{
+    margin: 41px 46px 30px;
+    background: #f3f3f3;
+    padding: 13px;
+    border: 88px;
+    border-radius: 5%;
+}
+
+.report_count{
+    position: relative;
+    right: 27px;
+    font-weight: bold;
+    color:  #ffffff;
+    display: inline;
+    background: #7a7474;
+    padding: 10px;
+    border-radius: 15px;
+    font-size: 17px;
+    margin-left: 11px;
+}
+.report_cost{
+    position: relative;
+    right: 98px;
+    font-weight: bold;
+    color:  #ffffff;
+    display: inline;
+    background: #7a7474;
+    padding: 10px;
+    border-radius: 15px;
+    font-size: 17px;
+}
+.report_file{
+    position: relative;
+    right: 140px;
+    font-weight: bold;
+    color: #ffffff;
+    display: inline;
+    background:#7a7474 ;
+    padding: 10px;
+    border-radius: 15px;
+    font-size: 17px;
+    text-decoration: none;
+}
+.box_resource_title{
+    font-weight: bold;
+    font-size: 23px;
+    text-align: center;
+}
+
+.tdes{
+    margin: 60px;
+}

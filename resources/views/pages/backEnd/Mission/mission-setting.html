@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="arabic" dir="rtl">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <title>Zadna</title>
+
+
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="../dist/css/popper.css">
+    <link href="../dist/css/bootstrap4-rtl.css" rel="stylesheet">
+    <link rel="stylesheet" href="../dist/fonts/fontawesome-free-5.0.8/web-fonts-with-css/css/fontawesome.css">
+    <!--  table css -->
+    <link rel="stylesheet" href="../dist/plugins/neighbordog-jquery-paginate-cea0026/src/jquery.paginate.css">
+    <!-- our style -->
+    <link rel="stylesheet" href="../dist/css/zadna-str.css">
+    <link rel="stylesheet" href="../dist/css/generalSet.css">
+    <link rel="stylesheet" href="../dist/css/cropTypes.css">
+    <link href="../dist/css/PopupStyle.css" rel="stylesheet">
+    <!-- Select2 -->
+    <link rel="stylesheet" href="../dist/plugins/select2/select2.min.css">
+    <style>
+        .stop:hover{
+        color:red;
+    }
+    </style>
+
+
+
+</head>
+
+<body>
+    <div class="top row">
+        <div class="col-lg-6 col-sm-6 col-6 ">
+            <a class="navbar-brand" href="#"><img src="../dist/imgs/%D8%B2%D8%A7%D8%AF%D9%86%D8%A7-logo-white.png"
+                    style="width: 50px"></a>
+        </div>
+        <div class="col-lg-6 col-sm-6 col-6 icons-div">
+            <div class="icons ">
+                <a href="#"> <img src="../dist/imgs/logout.png" width="30px"></a>
+                <a href="#"> <i class="fas fa-bell"></i></a>
+
+            </div>
+        </div>
+
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light bg-color ">
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item ">
+                    <a class="nav-link" href="#">الرئيسية<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="#">اعدادات عامة</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="#">الامراض</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">عمليات زراعية</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link " href="#">طاقم العمل</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">المخزن</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">تجارب</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link " href="#">صيانة</a>
+                </li>
+
+                <li class="nav-item active">
+                    <a class="nav-link" href="#"> مهام اضافية</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">تكاليف</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="#">مواسم</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!--بدايه اصناف المحصول-->
+    <section class="content cropType">
+        <div class="top-bar">
+
+            <h6> مهام اضافية </h6>
+        </div>
+        <div class="Tparent">
+
+            <div class="row ml-3 mr-3 mt-3 p-3 filter-search-box filter-form">
+                <div class="col-lg-10">
+
+                    <div class="row filter-res">
+
+                        <div class="col-lg-2 col-sm-12 col-md-12 col-12">
+                            <div>
+                                <label>النوع :</label>
+                            </div>
+
+
+                            <select class="form-control   filter1">
+                                <option>الكل</option>
+                                <option>ادارية</option>
+                                <option>زراعية</option>
+                                <option>تسويق</option>
+
+                            </select>
+                        </div>
+
+
+                        <div class="col-lg-8 col-sm-12 col-md-12 col-12">
+                            <div>
+                                <label>تاريخ البداية :</label>
+                            </div>
+                            من <input type="date" class="type-date">
+                            الى <input type="date" class="type-date">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-2 mt-3 col-sm-4 col-md-4 col-12 search-div">
+
+                </div>
+
+            </div>
+
+            <div class="row m-4">
+
+
+                <div class="float-left ">
+
+
+                    <button class="add-crepto mr-2 mb-2 addNewRow" data-toggle="modal" data-target="#ViewModal">تعيين
+                        مهمة </button>
+                </div>
+
+            </div>
+
+            <div class="row m-3 justify-content-center ">
+                <div class="col-lg-10 ">
+
+                    <table class="table zadnatable mainTable" tableId="11">
+                        <thead>
+                            <tr>
+
+                                <th>كود المربع</th>
+                                <th>النوع </th> 
+                                <th>المهمة</th>
+                                <th>المسؤل</th>
+                                <th>تاريخ التنفيذ</th>
+                                <th>الحالة</th>
+                                <th><i class="fas fa-bars"></i></th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+
+
+                            <tr>
+                                <td>565</td>
+                                <td>
+                                    ادارية
+                                </td>
+                                <td>
+                                    مكافحه مرض
+                                </td>
+                                <td>
+                                    م/ايمن
+                                </td>
+                                <td>
+                                    2018-04-18
+                                </td>
+                                <td>
+                                    تم الانتهاء
+                                </td>
+                                <td>
+                                    <a style="color:black" href="mission-view.html">
+                                        <i class="fas fa-eye view-row" title="View"></i>
+                                    </a>
+                                    <i class="fas fa-ban  stop" title="ايقاف المهمة" style="cursor:pointer" data-toggle="modal"
+                                        data-target="#mission-conf"></i>
+
+
+                                </td>
+
+
+                            </tr>
+                    </table>
+                </div>
+
+
+
+
+            </div>
+
+            <!-- add  Modal -->
+            <div class="modal fade" id="ViewModal" role="dialog" aria-labelledby="ViewModalTitle" aria-hidden="true"
+                currtable viewrow page-link="mission-view.html">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content modalbg">
+                        <div class="modal-header modal-border">
+                            <h5 class="modal-title" id="ViewModalTitle">تعيين مهمة </h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body modal-space">
+
+                            <div class="table-responsive">
+
+                                <table class="table tableborder">
+
+                                    <thead>
+                                        <tr>
+
+                                            <th scope="col">كود المربع</th>
+                                            <th scope="col">النوع</th>
+                                            <th scope="col">المهمة</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="InputNum">
+                                                <select class="form-control select2 col-val" style="width: 70%">
+                                                    <option>255</option>
+                                                </select>
+                                            </td>
+                                            <td class="InputNum">
+                                                <select class="form-control select2 col-val" style="width: 70%">
+                                                    <option>مهندس</option>
+                                                    <option>دكتور</option>
+                                                    <option>محاسب</option>
+                                                    <option>استشارى</option>
+                                                    <option>مبرمج</option>
+                                                </select>
+                                            </td>
+
+                                            <td class="InputNum">
+                                                <select class="form-control select2 col-val" style="width: 70%">
+                                                    <option>مهندس</option>
+                                                    <option>دكتور</option>
+                                                    <option>محاسب</option>
+                                                    <option>استشارى</option>
+                                                    <option>مبرمج</option>
+                                                </select>
+                                            </td>
+
+
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                                <br> <br>
+                                <table class="table tableborder">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">المسؤل </th>
+                                            <th scope="col">تاريخ التنفيذ </th>
+                                            <th scope="col">تنفيذ بواسطة</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="InputNum">
+                                                <select class="form-control select2 col-val" style="width:70%;">
+                                                    <option>مهندس</option>
+                                                    <option>دكتور</option>
+                                                    <option>محاسب</option>
+                                                    <option>استشارى</option>
+                                                    <option>مبرمج</option>
+                                                </select>
+                                            </td>
+                                            <td class="InputNum">
+                                                <div class="form-group InputGroup">
+                                                    <input type="date" class="form-control numric " style="width: 70%;">
+
+                                                </div>
+                                            </td>
+                                            <td class="InputNum">
+                                                <div class="form-group InputGroup">
+                                                    <select id="tags" class="form-control select2 " data-placeholder="Select a State"
+                                                        style="width:70%;">
+                                                        <option>مادونا</option>
+                                                        <option>منى</option>
+                                                        <option>ياسمين</option>
+                                                        <option>سماء</option>
+                                                        <option>ريم</option>
+                                                        <option>اسراء</option>
+                                                        <option>هايدي</option>
+                                                    </select>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+
+                                <table class="table tableborder">
+
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">الملاحظات</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="form-group">
+                                                    <textarea class="form-control"></textarea>
+
+                                                </div>
+                                            </td>
+
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+
+                            </div>
+
+                        </div>
+                        <div class="modal-footer footer-border">
+                            <button type="button" class="btn save-btn Saverecom" id="save-edit">حفظ</button>
+                            <button type="button" class="btn close-btn" data-dismiss="modal">غلق</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- confirmation modal -->
+            <div id="mission-conf" class="modal fade less-culs" role="dialog" currtable="12" view-chat="view-req">
+                <div class="modal-dialog">
+
+                    <!-- Modal content-->
+                    <div class="modal-content modalbg-add">
+                        <div class="modal-header d-flex flex-row-reverse">
+                            <button type="button" class="close" data-dismiss="modal">×</button>
+                            <h5 class="modal-title text-center ">ايقاف مهمة</h5>
+                        </div>
+                        <div class="modal-body">
+
+                            هل انت متاكد من ايقاف المهمة ؟؟
+
+
+                        </div>
+                        <div class="modal-footer">
+                            <a href="#" id="saveDate" class="danger btn btn-primary SaveNote ">تأكيد</a>
+                            <a href="#" data-dismiss="modal" aria-hidden="true" class="btn btn-danger ">الغاء</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+        </div>
+
+    </section>
+
+
+
+
+
+    <div class="modal fade" id="exampleModalLong2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content modalbg-add">
+                <div class="modal-header header-border">
+                    <h5 class="modal-title" id="exampleModalLongTitle">اضافة نوع</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body ">
+
+                    <div class="form-group center">
+
+                        <input type="text" id="name-text" class="textStyle name-text">
+                    </div>
+
+                </div>
+                <div class="modal-footer footer-border">
+
+                    <button type="button" class="btn add-btn" data-dismiss="modal" aria-label="Close" value="اضافه" id="addgroup">اضافة</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="../dist/jquery/jquery-3.3.1.min.js"></script>
+    <script src="../dist/plugins/Export-Html-Table-To-Excel-Spreadsheet-using-jQuery-table2excel/dist/jquery.table2excel.js"></script>
+    <script src="../dist/js/popper.min.js"></script>
+    <script src="../dist/js/bootstrap4-rtl.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl"
+        crossorigin="anonymous"></script>
+    <!--<script src="dist/plugins/datatables.net-bs/js/datatable.js"></script>-->
+    <script src="../dist/plugins/neighbordog-jquery-paginate-cea0026/src/jquery.paginate.js"></script>
+    <script src="../dist/js/datatable.js"></script>
+    <script src="../dist/js/model.js"></script>
+
+
+    <script src="../dist/js/tablesfunc.js"></script>
+
+    <!-- Select2 -->
+    <script src="../dist/plugins/select2/select2.full.min.js"></script>
+    <script src="../dist/js/funcCall.js"></script>
+
+
+
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+        $(function () {
+            $("#tags").select2({
+                maximumSelectionLength: 4,
+                formatSelectionTooBig: function (limit) {
+
+                    // Callback
+
+                    return 'Too many selected items';
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

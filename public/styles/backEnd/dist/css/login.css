@@ -1,0 +1,154 @@
+html,body
+{
+  background-color: #a5bb9a;
+    background-image:url("../imgs/2.png"),url("../imgs/1.png");
+	
+    background-position: top right, top left;
+    background-repeat: no-repeat, no-repeat;
+
+}
+
+@font-face {
+    font-family: NotoSans-Bold;
+    src: url("../fonts/NotoSans-Bold.ttf");
+}
+@font-face {
+    font-family: NotoSans-Regular;
+    src: url("../fonts/NotoSans-Regular.ttf");
+}
+.login-page .form-group{margin-bottom: 15px;}
+.login-page, .register-page { background: none;}
+
+.login-logo img 
+
+{
+     width: 35%;
+    height: 110px;
+}
+
+.login-box, .register-box {
+    width: 387px;
+    margin: 0 auto;
+}
+
+.login-logo{
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 65px;
+    font-weight: 300;
+    margin-top: 65px;
+}
+.login-pic{
+  
+    text-align: center;
+    margin-bottom: 65px;
+    
+    margin-top: 65px; 
+}
+.login-pic img  {
+        width: 60%;
+    height: 150px
+}
+.login-box-body, .register-box-body {
+    background: #f1f4ef;
+    padding: 20px 62px;
+    border-top: 0;
+    height: 277px;
+    width: 387px;
+    border-radius: 5px;
+    box-shadow: 0px 0 38px 0px #542a11;
+}
+
+.login-box .login-box-msg{
+    color: #b12025;
+    font-family:NotoSans-Bold;
+    font-size: 20px;
+    margin: 0;
+    text-align: center;
+    padding: 0 20px 20px 20px;
+
+}
+
+
+#contactus-form {
+    margin-top: 15%;
+    
+}
+.login-box-body .has-feedback .form-control {
+    padding-left: 42.5px;
+    border-radius: 7px;
+    border: 1px solid #a1a1a1;
+}
+
+.form-control-feedback {
+    right: auto;
+    left:15px;
+}
+
+.has-feedback {
+    position: relative;
+}
+
+.login-box-body a
+{
+    color: #2e50a5;
+    font-family: NotoSans-Regular;
+    font-size: 15px;
+    border-bottom: 1px solid ;
+}
+input,button{
+        font-family: serif;
+}
+
+.login-box .sign-btn{ margin-top: 16px}
+
+.login-box .sign-btn button{
+    
+    border-radius: 6px;
+    padding: 9px;
+}
+.flat
+{
+   background-color: #58b82a;
+       color: #ffffff;
+}
+.form-control:focus ,.btn.focus, .btn:focus {
+     box-shadow: 0 0 10px 1px #abe094;
+}
+#ForgetPassword {
+    cursor: pointer; 
+    color:#301d0c;
+}
+#pass{
+    color: #301d0c;
+}
+#EYE {
+    position: absolute;
+    top: 14px;
+    left: 10px;
+}
+#pwd {
+    
+    position: relative;
+}
+
+ input{
+        font-family: FontAwesome, "Open Sans", Verdana, sans-serif;
+    }      
+      
+
+
+@media only screen and (max-width:400px ) {
+    .login-box-body, .register-box-body {
+
+        height: 279px;
+        width: 300px;
+        padding: 20px 34px;
+    }
+    .login-box, .register-box {
+        width: 300px;
+    }
+    
+}
+
+

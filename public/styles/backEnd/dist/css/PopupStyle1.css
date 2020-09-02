@@ -1,0 +1,191 @@
+.headRow{
+padding-bottom: 2%;
+   
+    border-bottom: solid #58b82a;
+     margin-bottom: 2%;
+}
+
+
+
+
+.lbtn:not(:disabled):not(.disabled){
+  float: left;
+    color: black;
+    outline: none;
+}
+
+.lbtn.focus,.lbtn:focus {
+    outline: 0;
+    box-shadow: none;
+}
+.dpw.show{
+    left: 100% !important;
+    transform: translate3d(-193px, 38px, 0px) !important;
+}
+.modalbg{
+    background-color: #f5f5f5;
+}
+.modalbg-add{
+    background-color: white;
+    border: solid .5px;
+    border-radius:5%;
+    border-color: #fc782e;
+}
+.lbtn {
+    background-color: white;
+}
+.textp{
+    text-align:justify;
+}
+.dropdown-border{
+    border-bottom: solid .5px;
+    border-bottom-color: darkgrey;
+}
+.modal-border{
+    border: solid .5px;
+box-shadow: 1px -2px 3px 0px;
+    border-right: none;
+    border-left: none;
+    background: white;
+    margin-bottom: 3%;
+}
+.modal-space{
+    margin-bottom: 0%;
+}
+
+
+.footer-border{
+    border-top:solid .5px;
+}
+.close-btn{
+       width: 107px;
+    height: 42px;
+    background-color:#301d0c;
+    color: white;
+    border-radius: initial;
+    margin-left: 30px!important;
+}
+.save-btn{
+        width: 107px;
+    height: 42px;
+    background-color:#fc782e;
+    color: white;
+    border-radius: initial;
+    margin-left: 47px;
+}
+.edit-btn{
+        width: 107px;
+    height: 42px;
+    background-color:#2c5c15;
+    color: white;
+    border-radius: initial;
+    margin-left: 47px;
+}
+.add-btn{
+         width: 107px;
+    height: 42px;
+    background-color:#58b82a;
+    color: white;
+    border-radius: initial;
+    margin-left: 39%;
+   
+}
+.dropdown-margin{
+        margin-right: 3%;
+}
+.dropdown-margin2{
+    margin-right: 7%;
+}
+.dropdown-style{
+    list-style: none;
+    width: 100% !important;
+}
+.dropdown-style:hover{
+    background: transparent;
+}
+.addstyle{
+        padding-right: 0;
+    text-align: center;
+    margin-bottom: 0;
+}
+.textStyle{
+        border: none;
+    border-bottom: solid .5px;
+   
+}
+.textStyle:focus{
+    box-shadow: none;
+        outline: none !important;
+}
+.center{
+    text-align: center;
+}
+.header-border{
+    border-bottom: solid .5px;
+}
+
+.InputNum{
+  
+    width: 28%;
+    margin-left: 3%;
+}
+.InputGroup{
+        width: 100%;
+    margin: 0!important;
+    display: inline-flex;
+}
+
+.cardPadding{
+    padding: 0;
+    background: white;
+}
+.itemGroup{
+    list-style: none;
+ 
+    padding-right: 0;
+}
+.itemGroup >li{
+    margin-bottom: 2%;
+ border-bottom: 1px solid rgba(0,0,0,.125);
+    padding: 4%;
+}
+.itemGroup >li a,#ُEditTypeModal a{
+    color: black;
+    text-decoration: none;
+}
+.itemGroup >li a:focus{
+    box-shadow: none;
+    outline: none;
+}
+.itemGroup >li:last-child{
+    border-bottom: none;
+}
+.cb0dy{
+    padding: 0 !important;
+}
+
+
+.tableborder th{
+    border-top:none; 
+    border-bottom-color: #58b82a !important;
+}
+.arrow{
+    color: black;
+}
+.numric:focus{
+    border-color:#dee2e6;;
+    box-shadow: none;
+}
+#add-categ{
+    max-height: 200px;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+
+}
+@media (min-width: 992px){
+    .modal-lg {
+    max-width: 70%!important;
+}
+}

@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="arabic" dir="rtl">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <title>Zadna</title>
+
+
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="../dist/css/popper.css">
+    <link href="../dist/css/bootstrap4-rtl.css"rel="stylesheet">
+    <link rel="stylesheet" href="../dist/fonts/fontawesome-free-5.0.8/web-fonts-with-css/css/fontawesome.css">
+    <!-- data table css -->
+    <link rel="stylesheet" href="../dist/plugins/datatables.net-bs/css/datatable.css">
+  <!-- our style -->
+    <link rel="stylesheet" href="../dist/css/zadna-str.css">
+    <link rel="stylesheet" href="../dist/css/generalSet.css">
+    <link rel="stylesheet" href="../dist/css/cropTypes.css">
+     <link href="../dist/css/PopupStyle.css"rel="stylesheet">
+    
+    
+    
+
+
+</head>
+<body>
+<div class="top row">
+    <div class="col-lg-6 col-sm-6 col-6 ">
+        <a class="navbar-brand" href="#"><img src="../dist/imgs/%D8%B2%D8%A7%D8%AF%D9%86%D8%A7-logo-white.png" style="width: 50px"></a>
+    </div>
+    <div class="col-lg-6 col-sm-6 col-6 icons-div">
+        <div class="icons ">
+            <a href="#"> <img src="../dist/imgs/logout.png" width="30px"></a>
+            <a href="#"> <i class="fas fa-bell"></i></a>
+
+        </div>
+    </div>
+
+</div>
+<nav class="navbar navbar-expand-lg navbar-light bg-light bg-color ">
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item ">
+                <a class="nav-link" href="#">الرئيسية<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#">اعدادات عامة</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">عمليات زراعية</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " href="#">طاقم العمل</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="#">المخزن</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">تجارب</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " href="#">صيانة</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="#">تعين مهمة</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">تكاليف</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " href="#">مواسم</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<!--بدايه اصناف المحصول-->
+<section class="content cropType">
+<div class="top-bar">
+    <h6>اعدادات عامه > المستخدمين</h6>
+</div>
+        <div class="second-bar mt-4 p-4" >
+          
+    <h6>إضافة مستخدم</h6>  <hr>
+</div>
+     
+                 
+<table class="table tableborder m-auto"  style="width: 95%">
+  
+  <thead>
+    <tr>
+      
+      <th scope="col">الكود</th>
+      <th scope="col">الاسم</th>
+        <th></th><th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      
+      <td class="InputNum" ><div class="form-group InputGroup">
+          <input type="number" class="form-control numric" min="0">
+          
+          </div></td>
+          <td class="InputNum"><div class="form-group InputGroup">
+          <input type="text" class="form-control numric" min="0">
+          
+          </div></td><td></td> <td></td>
+        
+        
+    </tr>
+   
+  </tbody>
+</table>
+    
+       <div class="table-bar mt-4 mb-4" >
+          
+    <h6>الصلاحيات</h6>  <hr>
+</div>
+ 
+   <table class="table internal-table mb-5">
+    <thead>
+        <th><span>الاسم</span></th>
+        <th><span>إضافة</span></th>
+        <th><span>تعديل</span></th>
+         <th><span>حذف</span></th>
+        <th><span>الكل</span></th>
+    </thead>
+    
+    <tbody>
+        <tr >
+            
+         <td > <div data-toggle="collapse" data-target="#accordion" class="clickable" style="cursor: pointer">
+             <i class="fas fa-angle-down arrow"></i><span>الاعدادات العامة </span> 
+             </div> </td>
+            <td><input type="checkbox"  id="1"></td>
+            <td><input type="checkbox" id="2"></td>
+            <td><input type="checkbox" id="3" ></td>
+            <td><input type="checkbox" id="4" ></td>
+        </tr>
+        <tr>
+            <td colspan="5" >
+                <div id="accordion" class="collapse">
+                <table style="width: 100%;">
+                    <tr>
+                        <td class="tdone"><span>خامات</span></td>
+                        <td class="tdtwo"><input type="checkbox" class="1" ></td>
+            <td class="tdthree"><input type="checkbox" class="2" ></td>
+            <td class="tdfour"><input type="checkbox" class="3" ></td>
+            <td class="tdone"><input type="checkbox" class="4" ></td>
+                    </tr>
+                    
+                        <tr>
+                        <td class="tdone"><span>معدات</span></td>
+                        <td class="tdtwo"><input type="checkbox" class="1" ></td>
+            <td class="tdthree"><input type="checkbox" class="2"  ></td>
+            <td class="tdfour"><input type="checkbox" class="3"></td>
+            <td class="tdone"><input type="checkbox" class="4" ></td>
+                    </tr>
+                       <tr>
+                        <td class="tdone"><span>الابار</span></td>
+                        <td class="tdtwo"><input type="checkbox" class="1" ></td>
+            <td class="tdthree"><input type="checkbox" class="2"></td>
+            <td class="tdfour"><input type="checkbox" class="3" ></td>
+            <td class="tdone"><input type="checkbox" class="4" ></td>
+                    </tr>
+                       <tr>
+                        <td class="tdone"><span>شبكة الرى</span></td>
+                        <td class="tdtwo"><input type="checkbox" class="1" ></td>
+            <td class="tdthree"><input type="checkbox" class="2"></td>
+            <td class="tdfour"><input type="checkbox" class="3" ></td>
+            <td class="tdone"><input type="checkbox" class="4" ></td>
+                    </tr>
+                    
+                </table>
+                
+                </div>
+            </td>
+        </tr>
+        
+         
+         <tr >
+            
+            <td >  <div style="cursor: pointer" data-toggle="collapse" data-target="#accordion1" class="clickable"><i class="fas fa-angle-down arrow"></i><span>الاعدادات العامة </span></div> </td>
+            <td><input type="checkbox" ></td>
+            <td><input type="checkbox" ></td>
+            <td><input type="checkbox" ></td>
+            <td><input type="checkbox" ></td>
+        </tr>
+          <tr>
+            <td colspan="5" >
+                <div id="accordion1" class="collapse">
+                <table style="width: 100%;">
+                    <tr>
+                        <td class="tdone"><span>خامات</span></td>
+                        <td class="tdtwo"><input type="checkbox"></td>
+            <td class="tdthree"><input type="checkbox"></td>
+            <td class="tdfour"><input type="checkbox"></td>
+            <td class="tdone"><input type="checkbox"></td>
+                    </tr>
+                    
+                        <tr>
+                        <td class="tdone"><span>معدات</span></td>
+                        <td class="tdtwo"><input type="checkbox" ></td>
+            <td class="tdthree"><input type="checkbox" ></td>
+            <td class="tdfour"><input type="checkbox" ></td>
+            <td class="tdone"><input type="checkbox" ></td>
+                    </tr>
+                       <tr>
+                        <td class="tdone"><span>الابار</span></td>
+                        <td class="tdtwo"><input type="checkbox" ></td>
+            <td class="tdthree"><input type="checkbox"></td>
+            <td class="tdfour"><input type="checkbox"></td>
+            <td class="tdone"><input type="checkbox" ></td>
+                    </tr>
+                       <tr>
+                        <td class="tdone"><span>شبكة الرى</span></td>
+                        <td class="tdtwo"><input type="checkbox" ></td>
+            <td class="tdthree"><input type="checkbox" ></td>
+            <td class="tdfour"><input type="checkbox" ></td>
+            <td class="tdone"><input type="checkbox" ></td>
+                    </tr>
+                    
+                </table>
+                
+                </div>
+            </td>
+        </tr>
+        
+        
+    </tbody>
+</table> 
+
+</section>
+<!--نهايه اصناف المحصول-->
+
+<!-- Scripts -->
+<script src="../dist/jquery/jquery-3.3.1.min.js"></script>
+<script src="../dist/js/popper.min.js"></script>
+<script src="../dist/js/bootstrap4-rtl.js"></script>
+ <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+<script>
+			$(document).ready(function ($) {
+               $(function() {
+    $("#1").click(function() {
+       $(".1").prop('checked',$(this).prop('checked'));
+    });
+});
+});
+</script>
+
+
+
+    
+
+
+</body>
+</html>

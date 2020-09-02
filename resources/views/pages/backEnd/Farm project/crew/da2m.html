@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="arabic" dir="rtl">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <title>Zadna</title>
+
+
+
+       <!-- Styles -->
+    <link rel="stylesheet" href="../dist/css/popper.css">
+    <link href="../dist/css/bootstrap4-rtl.css"rel="stylesheet">
+    <link rel="stylesheet" href="../dist/fonts/fontawesome-free-5.0.8/web-fonts-with-css/css/fontawesome.css">
+    <!--  table css -->
+    <link rel="stylesheet" href="../dist/plugins/neighbordog-jquery-paginate-cea0026/src/jquery.paginate.css">
+    <!-- our style -->
+    <link rel="stylesheet" href="../dist/css/zadna-str.css">
+    <link rel="stylesheet" href="../dist/css/generalSet.css">
+    <link rel="stylesheet" href="../dist/css/cropTypes.css">
+
+    <link href="../dist/css/PopupStyle.css"rel="stylesheet">
+    <!-- Select2 -->
+  <link rel="stylesheet" href="../dist/plugins/select2/select2.min.css">
+    
+    
+
+</head>
+<body>
+<div class="top row">
+    <div class="col-lg-6 col-sm-6 col-6 ">
+        <a class="navbar-brand" href="#"><img src="../dist/imgs/%D8%B2%D8%A7%D8%AF%D9%86%D8%A7-logo-white.png" style="width: 50px"></a>
+    </div>
+    <div class="col-lg-6 col-sm-6 col-6 icons-div">
+        <div class="icons ">
+            <a href="#"> <img src="../dist/imgs/logout.png" width="30px"></a>
+            <a href="#"> <i class="fas fa-bell"></i></a>
+
+        </div>
+    </div>
+
+</div>
+<nav class="navbar navbar-expand-lg navbar-light bg-light bg-color ">
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+                <li class="nav-item ">
+                    <a class="nav-link" href="#">الرئيسية<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="../settings/index%20.html">اعدادات عامة</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../fertilizing/fertilizing.html">عمليات زراعية</a>
+                </li>
+                <li class="nav-item active ">
+                    <a class="nav-link " href="../crew/crew.html">طاقم العمل</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../store/store.html">المخزن</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../experiments/experments.html">تجارب</a>
+                </li>
+                <li class="nav-item  ">
+                     <a class="nav-link" href="../maintaince/maintenance.html">صيانة</a>
+                   
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../mission/mission.html">تعين مهمة</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../costs/cost.html">تكاليف</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="../Seasons/Season.html">مواسم</a>
+                </li>
+                  <li class="nav-item ">
+                    <a class="nav-link " href="../Diseases/Diseases.html">الامراض</a>
+                </li>
+            </ul>
+             
+        
+    </div>
+</nav>
+<!--بدايه اصناف المحصول-->
+<section class="content cropType">
+    <div class="top-bar">
+       
+        <h6> طاقم العمل >  دائم   </h6> 
+    </div>
+    <div class="Tparent" >
+
+       <div class="row ml-3 mr-3 mt-3 p-3 filter-search-box">
+           <div class="col-lg-10">
+
+                <div class="row filter-res">
+                    
+             <div class="col-lg-2 col-sm-12 col-md-12 col-12">
+                 <div >
+               <label>الوظيفة :</label> 
+             </div>
+            <select class="form-control filter-form" >
+                    
+                    <option>عامل </option>
+                    <option> مدير زراعة</option>
+                    <option> استشاري</option>
+                    <option> مهندس</option>
+                    <option> محاسب</option>
+                    <option>امين مخازن </option>
+                  </select>
+             </div> 
+                        <div class="col-lg-2 col-sm-12 col-md-12 col-12">
+              
+             </div> 
+                
+                      <div class="col-lg-8 col-sm-12 col-md-12 col-12">
+                               <div >
+               <label> تاريخ :</label> 
+             </div> 
+          من <input type="date" class="type-date">
+                           الى <input type="date" class="type-date">
+             </div> 
+                   
+               
+              
+                 
+            </div>
+           
+              
+            
+           </div>
+         <div class="col-lg-2 mt-3 col-sm-4 col-md-4 col-12">
+                <label class="search-icon">  <input type="text" class="search" id="myInput2"></label>
+        
+             </div> 
+      
+       </div>
+
+        <div class="row m-4">
+
+
+            <div class="float-left " >
+
+
+                <button class="add-crepto mr-2 mb-2 addNewRow  " data-toggle="modal" data-target="#exampleModalLong">أضافة </button>
+
+
+                <button class="upload-excel mr-2 mb-2 ">أدخال عن طريق ملف</button>
+
+
+               
+
+
+
+            </div>
+
+        </div>
+
+        <div class="row m-3 justify-content-center ">
+            <div class="col-lg-10 ">
+
+                <table class="table zadnatable mainTable" tableId="11">
+                    <thead >
+                    <tr >
+                        <th>الكود</th>
+                        <th>الاسم </th>
+                        <th>الوظيفة</th>
+
+                        <th>تاريخ التعيين</th>
+                       
+                        <th class="actions">العمليات</th>
+
+                    </tr>
+                    </thead>
+                    <tbody>
+
+
+                    <tr rowId="1">
+                        
+                     
+                        
+                               <td >
+                            <div class="form-group InputGroup">
+                                <input type="text" class="form-control td-input" value="1" disabled>
+
+                            </div>
+                        </td>
+                        <td >
+                            <div class="form-group InputGroup">
+                                <input type="text" class="form-control td-input" value="مادونا" disabled>
+
+                            </div>
+                        </td>
+                        <td >
+                            <div class="form-group InputGroup">
+                                <input type="text" class="form-control  td-input" value="مبرمج" disabled >
+
+                            </div>
+                        </td>
+                          <td>
+                               <div class="form-group InputGroup">
+                                <input type="text" class="form-control  td-input" value="2018-04-18" disabled >
+
+                            </div>
+                        </td>
+                        
+                       
+                        <td class="query-td">
+                            <img src="../dist/imgs/user-deactivate.png" id="disactive" class="imgActive">
+                            <i class="fas fa-trash-alt delete-icon" title="Delete" data-toggle="modal" data-target="#deletemodal"></i>
+                            <a href="da2m-view.html" style="color:black"><i class="fas fa-eye view-row" title="View"></i></a>
+                        </td>
+
+                    </tr>
+                    <tr rowId="2">
+                        
+                     
+                        
+                               <td >
+                            <div class="form-group InputGroup">
+                                <input type="text" class="form-control td-input" value="1" disabled>
+
+                            </div>
+                        </td>
+                        <td >
+                            <div class="form-group InputGroup">
+                                <input type="text" class="form-control td-input" value="مادونا" disabled>
+
+                            </div>
+                        </td>
+                        <td >
+                            <div class="form-group InputGroup">
+                                <input type="text" class="form-control  td-input" value="دكتوره" disabled >
+
+                            </div>
+                        </td>
+                          <td>
+                               <div class="form-group InputGroup">
+                                <input type="text" class="form-control  td-input" value="2018-04-18" disabled >
+
+                            </div>
+                        </td>
+                        
+                   
+                       
+                        <td class="query-td">
+                            <img src="../dist/imgs/useractivate.png" id="active" class="imgActive"><i class="fas fa-trash-alt delete-icon" title="Delete" data-toggle="modal" data-target="#deletemodal">
+                            </i>
+                            <a href="da2m-view.html" style="color:black"><i class="fas fa-eye view-row" title="View"></i></a> 
+                        </td>
+
+                    </tr>
+                   
+
+
+                </table></div>
+
+
+
+
+        </div>
+
+
+    </div>
+
+</section>
+<!-- add  Modal -->
+<div class="modal fade" id="exampleModalLong"  role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true" currtable>
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content modalbg">
+      <div class="modal-header modal-border">
+        <h5 class="modal-title" id="exampleModalLongTitle">اضافة </h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body modal-space">
+          <div class="table-responsive">
+              
+<table class="table tableborder">
+  
+  <thead>
+    <tr>
+      <th scope="col">الكود</th>
+     <th scope="col">الاسم</th>
+      <th scope="col">الوظيفة</th>
+      <th scope="col">الجنس</th>
+      
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      
+
+        <td class="InputNum"><div class="form-group InputGroup"><input typ="number" class="form-control" value="111" min="0"></div></td>
+           <td class="InputNum"><div class="form-group InputGroup">
+          <input type="text" class="form-control numric col-val">
+          
+          </div></td>
+<td class="InputNum"> <select class="form-control select2 col-val" style="width: 100%;">
+                    <option >مهندس</option>
+                  <option>دكتور</option>
+                  <option>محاسب</option>
+                  <option>استشارى</option>
+                  <option>مبرمج</option>
+                </select></td>
+        
+              <td class="InputNum"> <select class="form-control" style="width: 100%; height: 20%">
+                  <option selected disabled>النوع</option>
+                  <option>ذكر</option>
+                  <option>انثى</option>
+                
+                </select></td>
+     
+    </tr>
+   
+  </tbody>
+</table>
+              
+ 
+              <table class="table tableborder">
+  
+  <thead>
+    <tr>
+      
+     
+      <th scope="col">الجنسية </th>
+        <th scope="col">الرقم القومي</th>
+      <th scope="col">التكلفة باليوم </th>
+       <th scope="col">المرتب الشهري </th>
+      
+    
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      
+      <td class="InputNum"> <select class="form-control select2" style="width: 100%;">
+                    <option >مصري</option>
+                  <option>سعودي</option>
+                  <option>ايطالي</option>
+                </select></td>
+         <td class="InputNum"><div class="form-group InputGroup">
+        <input type="number" class="form-control numric"  >
+          
+          </div>
+        </td>
+        <td class="InputNum"><div class="form-group InputGroup">
+          <input type="number" class="form-control numric" min="0" >
+          
+          </div>
+        </td>
+        <td class="InputNum"><div class="form-group InputGroup">
+          <input type="number" class="form-control numric" min="0" >
+          
+          </div>
+        </td>
+
+        
+    </tr>
+   
+  </tbody>
+</table>
+              
+        
+              <table class="table tableborder">
+  
+  <thead>
+    <tr>
+      
+      <th scope="col">تاريخ التعين </th>
+      <th scope="col">تاريخ الميلاد </th>
+      <th scope="col">  مسئول عن</th>
+      
+    
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      
+      <td class="InputNum"><div class="form-group InputGroup">
+          <input type="date" class="form-control numric col-val"  >
+          
+          </div>
+        </td>
+         <td class="InputNum"><div class="form-group InputGroup">
+         <input type="date" class="form-control numric"  >
+          
+          </div>
+        </td>
+        <td class="InputNum"><div class="form-group InputGroup">
+        <select id="tags" class="form-control select2" multiple="multiple" data-placeholder="Select a State" style="width: 100%;">
+                  <option>احمد</option>
+                  <option>منى</option>
+                  <option>ياسمين</option>
+                  <option>اميره</option>
+                  <option>جهاد</option>
+                  <option>شيماء</option>
+                  <option>على</option>
+                </select>
+          </div>
+        </td>
+       
+
+        
+    </tr>
+   
+  </tbody>
+</table>
+              
+              
+          </div>
+  </div>
+        <div class="modal-footer footer-border">
+        <button type="button" class="btn close-btn" data-dismiss="modal">غلق</button>
+       <button type="button" class="btn save-btn btnSave" id="saveMatrial">حفظ</button>
+      </div>
+</div>
+    </div>
+    </div>
+
+<!-- view  Modal -->
+<!--
+    
+<div class="modal fade" id="exampleModalLong22" currtable  viewrow  role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content modalbg">
+      <div class="modal-header modal-border">
+        <h5 class="modal-title" id="exampleModalLongTitle">مراجعه البيانات </h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+<div class="modal-body modal-space">
+<div class="table-responsive">
+              
+<table class="table tableborder">
+  
+  <thead>
+    <tr>
+      <th scope="col">الكود</th>
+     <th scope="col">الاسم</th>
+      <th scope="col">الوظيفة</th>
+      <th scope="col">الجنس</th>
+      
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      
+
+        <td class="InputNum"><div class="form-group InputGroup"><input typ="number" class="form-control" value="111" min="0" disabled></div></td>
+           <td class="InputNum"><div class="form-group InputGroup">
+          <input type="text" class="form-control numric loc col-val" disabled>
+          
+          </div></td>
+<td class="InputNum"> 
+    <select class="form-control select2 col-val" style="width: 100%;" disabled>
+                    <option >مهندس</option>
+                  <option>دكتور</option>
+              <option value="محاسب">
+                  محاسب
+        </option>
+        <option>استشارى</option>
+                  <option value="مبرمج" >
+                      مبرمج
+        </option>
+                </select></td>
+        
+              <td class="InputNum"> <select class="form-control" style="width: 100%; height: 20%" disabled>
+                  <option selected disabled>النوع</option>
+                  <option>ذكر</option>
+                  <option>انثى</option>
+                
+                </select></td>
+     
+    </tr>
+   
+  </tbody>
+</table>
+              
+ 
+ <table class="table tableborder">
+  
+  <thead>
+    <tr>
+      
+     
+      <th scope="col">الجنسية </th>
+        <th scope="col">الرقم القومي</th>
+      <th scope="col">التكلفة باليوم </th>
+       <th scope="col">المرتب الشهري </th>
+      
+    
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      
+      <td class="InputNum"> <select class="form-control select2" style="width: 100%;" disabled>
+                    <option >مصري</option>
+                  <option>سعودي</option>
+                  <option>ايطالي</option>
+                </select></td>
+         <td class="InputNum"><div class="form-group InputGroup">
+        <input type="number" class="form-control numric" disabled >
+          
+          </div>
+        </td>
+        <td class="InputNum"><div class="form-group InputGroup">
+          <input type="number" class="form-control numric" min="0" disabled >
+          
+          </div>
+        </td>
+        <td class="InputNum"><div class="form-group InputGroup">
+          <input type="number" class="form-control numric" min="0" disabled >
+          
+          </div>
+        </td>
+
+        
+    </tr>
+   
+  </tbody>
+</table>
+              
+<table class="table tableborder">
+  
+  <thead>
+    <tr>
+      
+      <th scope="col">تاريخ التعين </th>
+      <th scope="col">تاريخ الميلاد </th>
+      <th scope="col">  مسئول عن</th>
+      
+    
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      
+      <td class="InputNum"><div class="form-group InputGroup">
+          <input type="date" class="form-control numric col-val" disabled  >
+          
+          </div>
+        </td>
+         <td class="InputNum"><div class="form-group InputGroup">
+         <input type="date" class="form-control numric" disabled >
+          
+          </div>
+        </td>
+        <td class="InputNum"><div class="form-group InputGroup">
+        <select id="tags" class="form-control select2" multiple="multiple" data-placeholder="Select a State" style="width: 100%;" disabled>
+                  <option>احمد</option>
+                  <option>منى</option>
+                  <option>ياسمين</option>
+                  <option>اميره</option>
+                  <option>جهاد</option>
+                  <option>شيماء</option>
+                  <option>على</option>
+                </select>
+          </div>
+        </td>
+       
+
+        
+    </tr>
+   
+  </tbody>
+</table>
+        
+<table class="table tableborder">
+  
+  <thead>
+    <tr>
+      
+      <th scope="col" class="headerText">  اضافة ملحوظة </th>
+        <th scope="col"></th>
+        <th scope="col"></th>
+         <th scope="col"></th>
+    </tr>
+  </thead>
+  <tbody>
+      
+<table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>من</th>
+        <th> التاريخ</th>
+          <th> المحتوى</th>
+           <th><button class="add-Rowaddon add-crepto2" disabled>اضافة</button></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><div class="form-group">
+          <input type="text" class="form-control code1 planeType "  disabled>
+          
+          </div></td>
+        <td><div class="form-group">
+          <input type="date" class="form-control planeType"  disabled>
+          
+          </div></td>
+        
+           <td><div class="form-group">
+               <textarea rows="4" cols="50" class="form-control planeType  " disabled></textarea>
+          
+          
+          </div></td>
+        
+           <td> 
+               <input type="button" class="done-crepto changeColor" value="تم" disabled  />
+               
+          
+          </td>
+      </tr>
+     
+      
+    </tbody>
+  </table>
+   
+  </tbody>
+</table> 
+              
+          </div>
+</div>
+<div class="modal-footer footer-border">
+             <button type="button" class="btn dist-btn">فصل</button>
+            <button type="button" class="btn close2-btn" data-dismiss="modal">غلق</button>
+                <button type="button" class="btn edit-btn" style=" background-color:#d8d612;">تعديل</button>
+                <button type="button" class="btn save-btn hide" id="save-edit" hidden >حفظ</button>
+               
+</div>
+</div>
+    </div>
+    </div>
+-->
+
+  <!-- delete  Modal -->
+    
+<div id="deletemodal" class="modal fade" role="dialog">
+                    <div class="modal-dialog">
+
+                        <!-- Modal content-->
+                        <div class="modal-content modalbg-add">
+                            <div class="modal-header d-flex flex-row-reverse">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h4 class="modal-title ">حذف</h4>
+                            </div>
+                            <div class="modal-body">
+                                <p>حذف نوع محصول؟</p>
+                            </div>
+                            <div class="modal-footer">
+                                <a href="#" id="btnYes" class="danger btn btn-primary ">نعم</a>
+                                <a href="#" data-dismiss="modal" aria-hidden="true" class="btn btn-danger ">لا</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+
+
+
+<!-- Scripts -->
+<script src="../dist/jquery/jquery-3.3.1.min.js"></script>
+<script src="../dist/plugins/Export-Html-Table-To-Excel-Spreadsheet-using-jQuery-table2excel/dist/jquery.table2excel.js"></script>
+<script src="../dist/js/popper.min.js"></script>
+<script src="../dist/js/bootstrap4-rtl.js"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+<!--<script src="dist/plugins/datatables.net-bs/js/datatable.js"></script>-->
+<script src="../dist/plugins/neighbordog-jquery-paginate-cea0026/src/jquery.paginate.js"></script>
+<script src="../dist/js/datatable.js"></script>
+<script src="../dist/js/model.js"></script>  
+
+<script src="../dist/js/tablesfunc.js"></script>
+   
+    <script src="../dist/js/popup.js"></script>
+    <script src="../dist/js/crew-mo2kt.js"></script>
+  
+    <!-- Select2 -->
+<script src="../dist/plugins/select2/select2.full.min.js"></script>
+    
+<script>
+    
+    
+  $(function () {
+  
+    $(".select2").select2();
+
+
+    
+  });
+ $(function () {
+    $("#tags").select2({
+        maximumSelectionLength: 4,
+        formatSelectionTooBig: function (limit) {
+
+            // Callback
+
+            return 'Too many selected items';
+        }
+    });
+});
+    
+    /*active*/
+//        function change(x) {
+   var img1 = "../dist/imgs/useractivate.png";
+    var   img2 = "../dist/imgs/user-deactivate.png";
+//   var imgElement = document.getElementById('test');
+//   
+//   this.src = (imgElement.src === img1)? img2 : img1;
+//}
+    
+        $(document).on("click",'.imgActive',function()  
+       {
+ 
+             
+        
+         
+     
+    if ( $(this).attr('src') == img1 ){
+
+$(this).attr('src',img2);   
+} 
+else if ($(this).attr('src') == img2){
+$(this).attr('src',img1); 
+}
+           
+       });
+	   
+
+    function addRow (table,cellsNum,inputs) {
+    var curRow;
+    var row;
+    var code="<td>1</td>";
+    var actionRow=" <td ><img src=\"../dist/imgs/useractivate.png\" id=\"active\" class=\"imgActive\"> <i class=\"fas fa-trash-alt delete-icon\" title=\"Delete\"></i>\n" +
+        "<i  class=\"fas fa-eye view-row\" title=\"View\" data-toggle=\"modal\" data-target=\"#exampleModalLong22\" ></i>\n" +
+        "\n" +"<i class=\"fas fa-check-square save-edit\" hidden></i>"+ "</td>";
+    for(var i=0 ; i<cellsNum-2 ; i++){
+        // var col='<td>'+inputs[i].val()+ '</td>';
+        var col=" <td >\n" +
+            "<div class=\"form-group InputGroup\">\n" +
+            "<input type=\"text\" class=\"form-control td-input addon\" value =  " + inputs[i] + " disabled >\n" +
+            "\n" +
+            "</div>\n" +
+            "</td>"
+        curRow +=col;
+
+    }
+    //handle the read column in the last to tables
+    if(table.hasClass("static-col"))
+    {
+        var readcol='<td >\n' +
+            '<p data-toggle="modal" data-target="#MaintainModal" style="text-decoration: underline" >قراءه </p>\n' +
+            ' </td>';
+        row = '<tr>' + code + curRow + readcol + actionRow + '</tr>';
+
+    }
+    else
+        {
+        row = '<tr>' + code + curRow + actionRow + '</tr>';
+    }
+    table.append(row);
+}
+  
+
+
+        
+$(document).ready(function () {
+
+$(".mainTable tbody ").paginate({'perPage': 5});
+
+
+$(document).on("click", ".addNewRow", function (){
+    var table = $(this).parents(".Tparent").find(".mainTable");
+    var modal=$("#exampleModalLong");
+        modal.attr("currtable",table.attr("tableId"));
+        modal.find("input").val("");
+    });
+
+  
+
+
+    $(document).on("click", ".btnSave", function (){
+     
+        
+        var modal=$(this).parents(".modal");
+        var table=$("[tableid="+  modal.attr("currtable") +"]");
+        var TBody=table.find("tbody");
+
+
+        var cellsNum=table.find("th").length;
+        var inputs=modal.find(".col-val");
+        
+          var inputsVal=[];
+
+        for(var i=0 ; i<inputs.length;i++){
+            inputsVal[i]=inputs[i].value ;
+            console.log(inputs,"gggggggg",inputsVal[i].value);
+        }
+
+
+    
+addRow(TBody ,cellsNum , inputsVal);
+
+         
+
+        modal.modal("hide");
+        TBody.data('paginate').kill();
+        TBody.paginate({'perPage': 5});
+
+    });
+
+
+
+});
+ 
+/*AddRowPOPup*/
+
+        $(document).ready(function () {
+      
+         $(document).on("click",'.add-Rowaddon',function(){
+             var table=$(this).parents("table");
+          var cell1="<td><div class='form-group'><input type='text' class='form-control '> </div> </td>";
+            var cell2="<td><div class='form-group'><input type='date' class='form-control '> </div> </td>";
+            
+            
+          var cell4="<td><div class='form-group'><textarea rows='4' cols='50' class='form-control planeType'></textarea> </div> </td>";
+               var cell6="<td>  <input type='button' class='done-crepto changeColor' value='تم'/></td>";
+        
+            var row="<tr>"+ cell1 + cell2 + cell4 +cell6+"</tr>";
+            table.append(row);
+          
+
+           
+       });
+        });
+
+    </script>
+</body>
+</html>

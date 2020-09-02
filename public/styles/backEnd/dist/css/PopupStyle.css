@@ -1,0 +1,615 @@
+.headRow {
+    padding-bottom: 2%;
+    border-bottom: solid #58b82a;
+    margin-bottom: 2%;
+}
+
+.headerText {
+    text-align: right !important;
+}
+
+.isDisabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+a[aria-disabled="true"] {
+    color: currentColor;
+    display: inline-block;
+    /* For IE11/ MS Edge bug */
+    pointer-events: none;
+    text-decoration: none;
+}
+
+.stepwizard-step p {
+    margin-top: 0px;
+    color: #666;
+}
+
+.stepwizard-row {
+    display: table-row;
+}
+
+.stepwizard,
+.stepwizard2 {
+    display: table;
+    width: 100%;
+    position: relative;
+}
+
+.stepwizard .btn.disabled,
+.stepwizard .btn[disabled],
+.stepwizard fieldset[disabled] .btn,
+.stepwizard2 .btn.disabled,
+.stepwizard2 .btn[disabled],
+.stepwizard2 fieldset[disabled] .btn {
+    opacity: 1 !important;
+    color: transparent;
+    background: #dc751a;
+}
+
+.stepwizard-step .btn-success {
+    border-color: transparent;
+}
+
+.formstyle {
+    width: 100%;
+    padding-bottom: 4%;
+}
+
+.tabProgress {
+    width: 100%;
+    overflow: hidden;
+    border-right: 1px solid #AAA;
+    border-left: 1px solid #AAA;
+    border-bottom: 1px solid #AAA;
+    position: relative;
+    padding-bottom: 4% !important;
+}
+
+.progress-nav {
+    position: absolute;
+    bottom: 5px;
+    left: 5%;
+}
+
+.addNewRow:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.tab-content {
+    width: 100%;
+    float: left;
+    border-right: .5px solid #d8d8d8;
+    border-left: .5px solid #d8d8d8;
+}
+
+.type-date2 {
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    padding-bottom: 1%;
+    padding-top: 1%;
+}
+
+.modal-space2 {
+    padding-bottom: 4%;
+}
+
+.pager {
+    list-style: none;
+    padding-right: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.text-height {
+    max-height: 120px;
+    min-height: 120px;
+}
+
+.nextBtn,
+.prevBtn {
+    cursor: pointer;
+    background-color: #fc782e;
+    padding: 10px 34px;
+    bottom: 0px;
+    left: 0;
+    position: absolute;
+    border: none;
+    color: white;
+}
+
+.previous {
+    background-color: #fc782e;
+    padding: 10px 34px;
+    bottom: 0px;
+    right: -195px;
+    position: absolute;
+    color: #fff;
+}
+
+.pager a {
+    color: white;
+}
+
+.pager a:hover {
+    text-decoration: none;
+}
+
+.progress {
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    content: " ";
+    width: 100%;
+    height: 4px;
+    z-index: 0;
+}
+
+.border-prog {
+    border-right: 3px solid #f3f3f3;
+    border-left: 3px solid #f3f3f3;
+    border-bottom: 3px solid #f3f3f3;
+}
+
+.stepwizard-step {
+    display: table-cell;
+    text-align: center;
+    position: relative;
+}
+
+.btn-circle {
+    width: 36px;
+    height: 36px;
+    text-align: center;
+    padding: 6px 0;
+    font-size: 12px;
+    line-height: 1.428571429;
+    border-radius: 50%;
+    margin-top: -10%;
+    position: relative;
+}
+
+.upload_btn {
+    display: none;
+    background: linear-gradient(white, #959697);
+    box-shadow: grey -2px 2px 3px 1px;
+    padding: 7px 40px 7px 15px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(90, 80, 72);
+    border-radius: 4px;
+    color: black;
+    position: relative;
+}
+
+.upload_btn::after {
+    content: url(../imgs/upload.png);
+    background-color: #625c5c;
+    color: white;
+    padding: 8px 8px;
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.inputfile2+label {
+    background: linear-gradient(white, #959697);
+    position: relative;
+    color: black;
+    box-shadow: grey -2px 2px 3px 1px;
+    cursor: pointer;
+    padding: 7px 40px 7px 15px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(90, 80, 72);
+    border-image: initial;
+    border-radius: 4px;
+}
+
+.inputfile2+label ::after {
+    content: url(../imgs/upload.png);
+    background-color: #625c5c;
+    color: white;
+    padding: 8px 8px;
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.inputfile2 {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+    cursor: pointer;
+}
+
+.lbtn:not(:disabled):not(.disabled) {
+    float: left;
+    color: black;
+    outline: none;
+}
+
+.lbtn.focus,
+.lbtn:focus {
+    outline: 0;
+    box-shadow: none;
+}
+
+.dpw.show {
+    left: 100% !important;
+    transform: translate3d(-193px, 38px, 0px) !important;
+}
+
+.modalbg {
+    background-color: #f5f5f5;
+}
+
+.modalbg-add {
+    background-color: white;
+    border: solid .5px;
+    border-radius: 5%;
+    border-color: #fc782e;
+}
+
+.lbtn {
+    background-color: white;
+}
+
+.textp {
+    text-align: justify;
+}
+
+.dropdown-border {
+    border-bottom: solid .5px;
+    border-bottom-color: darkgrey;
+}
+
+.modal-border {
+    border: solid .5px;
+    box-shadow: 1px -2px 3px 0px;
+    border-right: none;
+    border-left: none;
+    background: white;
+    margin-bottom: 3%;
+}
+
+.modal-space {
+    margin-bottom: 0%;
+}
+
+.changeColor {
+    padding: 8px 18px !important;
+    background-color: darkgreen !important;
+}
+
+.footer-border {
+    border-top: solid .5px;
+}
+
+.planeType {
+    min-height: 50px;
+    max-height: 50px;
+}
+
+.close-btn {
+    width: 107px;
+    height: 42px;
+    background-color: #301d0c;
+    color: white;
+    border-radius: initial;
+    margin-left: 30px !important;
+}
+
+.close2-btn {
+    width: 107px;
+    height: 42px;
+    background-color: #301d0c;
+    color: white;
+    border-radius: initial;
+}
+
+.save-btn {
+    width: 107px;
+    height: 42px;
+    background-color: #fc782e;
+    color: white;
+    border-radius: initial;
+    margin-left: 47px;
+}
+
+.save-btn2 {
+    margin-bottom: 1%;
+    padding: 14% 30%;
+    background-color: #fc782e;
+    color: white;
+    border-radius: initial;
+}
+
+.edit2-btn {
+    width: 107px;
+    height: 42px;
+    background-color: #d8d612;
+    color: white;
+    border-radius: initial;
+    margin-left: 47px;
+}
+
+.pager>li {
+    float: left;
+}
+
+.dist-btn {
+    width: 107px;
+    height: 42px;
+    background-color: #ec3517;
+    color: white;
+    border-radius: initial;
+    margin-left: 47px;
+}
+
+.edit-btn {
+    width: 107px;
+    height: 42px;
+    background-color: #2c5c15;
+    color: white;
+    border-radius: initial;
+    margin-left: 47px;
+}
+
+.add-btn {
+    width: 107px;
+    height: 42px;
+    background-color: #58b82a;
+    color: white;
+    border-radius: initial;
+    margin-left: 39%;
+}
+
+.addation {
+    float: left;
+    margin-bottom: 1%;
+}
+
+.dropdown-margin {
+    margin-right: 3%;
+}
+
+.dropdown-margin2 {
+    margin-right: 7%;
+}
+
+.dropdown-style {
+    list-style: none;
+    width: 100% !important;
+}
+
+.dropdown-style:hover {
+    background: transparent;
+}
+
+.addstyle {
+    padding-right: 0;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.textStyle {
+    border: none;
+    border-bottom: solid .5px;
+}
+
+.textStyle:focus {
+    box-shadow: none;
+    outline: none !important;
+}
+
+.center {
+    text-align: center;
+}
+
+.header-border {
+    border-bottom: solid .5px;
+}
+
+.InputNum {
+    width: 28%;
+    margin-left: 3%;
+}
+
+.InputGroup {
+    width: 100%;
+    display: inline-flex;
+}
+
+.cardPadding {
+    padding: 0;
+    background: white;
+}
+
+.itemGroup {
+    list-style: none;
+    padding-right: 0;
+}
+
+.itemGroup>li {
+    margin-bottom: 2%;
+    border-bottom: 1px solid rgba(0, 0, 0, .125);
+    padding: 4%;
+}
+
+.itemGroup>li a,
+#ُEditTypeModal a {
+    color: black;
+    text-decoration: none;
+}
+
+.itemGroup>li a:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.itemGroup>li:last-child {
+    border-bottom: none;
+}
+
+.cb0dy {
+    padding: 0 !important;
+}
+
+.tableborder th {
+    border-top: none;
+    border-bottom-color: #58b82a !important;
+}
+
+.arrow {
+    color: black;
+}
+
+.numric:focus {
+    border-color: #dee2e6;
+    ;
+    box-shadow: none;
+}
+
+input[type="checkbox"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    /* Styling checkbox */
+    width: 16px;
+    height: 16px;
+    background-color: black;
+    color: white;
+}
+
+input[type="checkbox"]:focus {
+    outline: none;
+}
+
+input[type="checkbox"]:checked {
+    background-color: green;
+    position: relative;
+}
+
+input[type="checkbox"]:checked::after {
+    content: '✓';
+    position: absolute;
+    top: -1px;
+    left: 1px;
+}
+
+.edit-crepto {
+    padding: 0;
+    background-color: darkblue;
+    padding: 7px 7px;
+    text-align: center;
+    position: relative;
+    border: 1px solid grey;
+    border-radius: 4px;
+    color: white;
+    box-shadow: -2px 2px 3px 1px grey;
+    cursor: pointer;
+}
+
+.done-crepto {
+    padding: 0;
+    background-color: darkred;
+    padding: 7px 7px;
+    text-align: center;
+    position: relative;
+    border: 1px solid grey;
+    border-radius: 4px;
+    color: white;
+    box-shadow: -2px 2px 3px 1px grey;
+    cursor: pointer;
+}
+
+.add-crepto2 {
+    padding: 0;
+    background-color: #fc782e;
+    padding: 7px 7px;
+    position: relative;
+    border: 1px solid #fc782e;
+    border-radius: 4px;
+    color: white;
+    box-shadow: -2px 2px 3px 1px grey;
+    cursor: pointer;
+}
+
+#add-categ {
+    max-height: 200px;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.cards {
+    width: 100% !important;
+}
+
+.imgActive {
+    width: 33px;
+    margin: 2%;
+}
+
+.select2-container--default .select2-selection--single {
+    border: .5px solid #aaaaaa7a !important
+}
+
+.select2-container .select2-selection--single {
+    height: 38px !important;
+    padding-top: 2% !important;
+}
+
+.addon {
+    background: transparent !important;
+    border: none !important;
+    text-align: center !important;
+}
+
+.addon2 {
+    background-color: transparent !important;
+    border: none !important;
+}
+
+.addon3 {
+    text-align: -webkit-match-parent;
+    background-color: transparent !important;
+    border: none !important;
+    margin-right: -50px;
+}
+
+.addons {
+    background: transparent !important;
+    border: none !important;
+    text-align: right !important;
+}
+
+.paginate-pagination {
+    position: absolute;
+    right: 44%;
+    direction: rtl !important;
+}
+
+.border-print {
+    border: solid 1px;
+}
+
+.paginate-pagination ul>li {
+    float: right !important;
+}
+
+@media (min-width: 992px) {
+    .modal-lg {
+        max-width: 70% !important;
+    }
+}

@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="arabic" dir="rtl">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <title>Zadna users</title>
+
+
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="../dist/css/popper.css">
+    <link href="../dist/css/bootstrap4-rtl.css"rel="stylesheet">
+    <link rel="stylesheet" href="../dist/fonts/fontawesome-free-5.0.8/web-fonts-with-css/css/fontawesome.css">
+    <!--  table css -->
+    <link rel="stylesheet" href="../dist/plugins/neighbordog-jquery-paginate-cea0026/src/jquery.paginate.css">
+    <!-- our style -->
+    <link rel="stylesheet" href="../dist/css/zadna-str.css">
+    <link rel="stylesheet" href="../dist/css/generalSet.css">
+    <link rel="stylesheet" href="../dist/css/cropTypes.css">
+    <link href="../dist/css/PopupStyle.css"rel="stylesheet">
+
+
+
+
+
+</head>
+<body>
+<div class="top row">
+    <div class="col-lg-6 col-sm-6 col-6 ">
+        <a class="navbar-brand" href="#"><img src="../dist/imgs/%D8%B2%D8%A7%D8%AF%D9%86%D8%A7-logo-white.png" style="width: 50px"></a>
+    </div>
+    <div class="col-lg-6 col-sm-6 col-6 icons-div">
+        <div class="icons ">
+            <a href="#"> <img src="../dist/imgs/logout.png" width="30px"></a>
+            <a href="#"> <i class="fas fa-bell"></i></a>
+
+        </div>
+    </div>
+
+</div>
+<nav class="navbar navbar-expand-lg navbar-light bg-light bg-color ">
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item ">
+                <a class="nav-link" href="#">الرئيسية<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#">اعدادات عامة</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">عمليات زراعية</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " href="#">طاقم العمل</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="#">المخزن</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">تجارب</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " href="#">صيانة</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="#">تعين مهمة</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">تكاليف</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " href="#">مواسم</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<!--بدايه اصناف المحصول-->
+<section class="content cropType">
+    <div class="top-bar">
+        <h6>اعدادات عامه > المستخدمين</h6>
+    </div>
+
+
+
+    <!-- Custom Tabs -->
+    <div class="nav-tabs-custom">
+        <div class="row m-3">
+            <ul class="nav nav-tabs">
+                <li class="user-tab active"><a href="#tab_1" data-toggle="tab"> المستخدمين</a></li>
+                <li class="user-tab  "><a href="#tab_2" data-toggle="tab">مجموعة الصلاحيات</a></li>
+                <li class="user-tab tab2 "></li>
+
+            </ul>
+
+        </div>
+
+
+
+
+        <div class="tab-content ">
+
+            <div class="tab-pane Tparent active " id="tab_1">
+
+                <div >
+
+                    <div class="row ml-3 mr-3 mt-3 p-3 filter-search-box">
+                        <div class="col-lg-10">
+                            <div class="row filter-res">
+
+                                <div class="col-lg-2 col-sm-12 col-md-12 col-12">
+                                    <div >
+                                        <label>الوظيفة :</label>
+                                    </div>
+                                    <select class="form-control filter-form" >
+
+                                        <option>الكل</option>
+                                        <option>مزارع</option>
+                                        <option> نوع2</option>
+                                    </select>
+                                </div>
+
+
+                            </div>
+
+                        </div>
+                        <div class="col-lg-2 mt-3 col-sm-4 col-md-4 col-12">
+                            <label class="search-icon">  <input type="text" class="search" id="myInput"></label>
+
+                        </div>
+
+                    </div>
+
+                    <div class="row m-4">
+
+
+                        <div class="float-left ">
+
+
+                            <button class="add-crepto mr-2 mb-2  " data-toggle="modal" data-target="#exampleModalLong">أضافة مستخدم</button>
+
+
+
+
+                            <button class="upload-excel mr-2 mb-2 ">أدخال عن طريق ملف</button>
+
+
+                            <button class="export-excel mr-2 mb-2">أخراج كملف اكسيل</button>
+
+
+
+                        </div>
+
+                    </div>
+
+                    <div class="row m-3 justify-content-center ">
+                        <div class="col-lg-10 ">
+
+                            <table class="table   zadnatable ">
+                                <thead >
+                                <tr >
+                                    <th>الكود</th>
+                                    <th>الاسم</th>
+                                    <th>الوظيفه</th>
+                                    <th>تاريخ التعين</th>
+                                    <th class="actions">العمليات</th>
+
+                                </tr>
+                                </thead>
+                                <tbody>
+
+
+                                <tr rowId="1">
+                                    <td>2</td>
+                                    <td>محمد</td>
+                                    <td>مزارع</td>
+                                    <td>2015-03-25</td>
+                                    <td class="query-td"><i class="fas fa-trash-alt delete-icon" title="Delete"></i>
+                                        <i class="fas fa-eye view-row" title="View"  data-toggle="modal" data-target="#viewUserModal"></i></td>
+
+                                </tr>
+                                <tr rowId="2">
+                                    <td>3</td>
+                                    <td>احمد</td>
+                                    <td>وظيفه2</td>
+                                    <td>2017-05-30</td>
+                                    <td class="query-td"><i class="fas fa-trash-alt delete-icon" title="Delete"></i>
+                                        <i class="fas fa-eye view-row" title="View"  data-toggle="modal" data-target="#viewUserModal"></i></td>
+
+                                </tr>
+
+
+                                </tbody>
+                            </table>
+                        </div>
+
+
+
+
+                    </div>
+
+
+                </div>
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-lg" role="document">
+                        <div class="modal-content modalbg">
+                            <div class="modal-header modal-border">
+                                <h5 class="modal-title" id="exampleModalLongTitle">اضافة مستخدم</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body modal-space">
+                                <div class="table-responsive">
+                                    <table class="table tableborder">
+
+                                        <thead>
+                                        <tr>
+
+                                            <th scope="col">الاسم</th>
+                                            <th scope="col">الوظيفة</th>
+                                            <th scope="col">تاريخ التعين</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+
+
+                                            <td class="InputNum"><select class="form-control  user-name">
+                                                <option>احمد</option>
+                                                <option>محمد</option>
+
+                                            </select></td>
+
+                                            <td class="InputNum"><select class="form-control user-job">
+                                                <option>مزارع</option>
+                                                <option>وظيفه4</option>
+                                                <option>وظيفه5</option>
+
+                                            </select></td>
+
+                                            <td class="InputNum"><div class="form-group InputGroup">
+                                                <input type="date" class="form-control numric hire-date" min="0" >
+
+                                            </div></td>
+
+
+                                        </tr>
+
+                                        </tbody>
+                                    </table>
+                                    <table class="table tableborder">
+
+                                        <thead>
+                                        <tr>
+
+                                            <th scope="col">البريد الالكترونى</th>
+                                            <th scope="col">كلمة المرور</th>
+                                            <th></th>
+                                            <th></th>
+
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+
+                                            <td class="InputNum" style="width: 26%"><div class="form-group InputGroup">
+                                                <input type="text" class="form-control numric" min="0">
+
+                                            </div></td>
+                                            <td class="InputNum" style="width: 26%"><div class="form-group InputGroup">
+                                                <input type="password" class="form-control numric" min="0">
+
+                                            </div></td>
+                                            <td></td><td></td>
+
+                                        </tr>
+
+                                        </tbody>
+                                    </table>
+
+                                </div>
+                            </div>
+                            <div class="modal-footer footer-border">
+                                <button type="button" class="btn close-btn" data-dismiss="modal">غلق</button>
+                                <button type="button" class="btn save-btn" id="save-user">حفظ</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal fade" id="viewUserModal" viewrow tabindex="-1" role="dialog" aria-labelledby="viewUserModal" aria-hidden="true">
+                    <div class="modal-dialog modal-lg" role="document">
+                        <div class="modal-content modalbg">
+                            <div class="modal-header modal-border">
+                                <h5 class="modal-title" >رؤيه نفاصيل المستخدم</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body modal-space">
+                                <div class="table-responsive">
+                                    <table class="table tableborder">
+
+                                        <thead>
+                                        <tr>
+
+                                            <th scope="col">الاسم</th>
+                                            <th></th>
+                                            <th scope="col">الوظيفة</th>
+                                            <th></th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+
+
+                                            <td class="InputNum"><select class="form-control  Viewuser-name " disabled>
+                                                <option>احمد</option>
+                                                <option>محمد</option>
+
+                                            </select>
+                                            </td>
+                                            <td></td>
+
+                                            <td class="InputNum"><select class="form-control  Viewuser-job" disabled>
+                                                <option>مزارع</option>
+                                                <option>وظيفه2</option>
+                                                <option>وظيفه4</option>
+
+                                            </select>
+                                            </td>
+                                            <td></td>
+
+
+
+                                        </tr>
+
+                                        </tbody>
+                                    </table>
+                                    <table class="table tableborder">
+
+                                        <thead>
+                                        <tr>
+                                            <th scope="col">تاريخ التعين</th>
+                                            <th></th>
+                                            <th scope="col">البريد الالكترونى</th>
+                                            <th></th>
+
+
+
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td class="InputNum">
+                                                <div class="form-group InputGroup" >
+                                                    <input type="date" class="form-control numric Viewhire-date d-flex flex-row-reverse" min="0" disabled>
+
+                                                </div>
+                                            </td>
+                                            <td></td>
+                                            <td class="InputNum" style="width: 26%">
+                                                <div class="form-group InputGroup">
+                                                <input type="text" class="form-control numric user-mail" min="0" disabled>
+
+                                            </div>
+                                            </td>
+                                            <td></td>
+
+
+
+
+                                        </tr>
+
+                                        </tbody>
+                                    </table>
+
+                                </div>
+                            </div>
+                            <div class="modal-footer footer-border">
+
+                                <button type="button" class="btn edit-btn">تعديل</button>
+                                <button type="button" class="btn save-btn hide" id="save-edit" hidden >حفظ</button>
+                                <button type="button" class="btn close-btn" data-dismiss="modal">غلق</button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <!-- /.tab-pane -->
+
+            <div class="tab-pane Tparent" id="tab_2">
+
+                <div >
+
+                    <div class="row ml-3 mr-3 mt-3 p-3 filter-search-box">
+                        <div class="col-lg-10">
+                            <div class="row filter-res">
+
+                                <div class="col-lg-2 col-sm-12 col-md-12 col-12">
+                                    <div >
+                                        <label>أسم المجموعة :</label>
+                                    </div>
+                                    <select class="form-control filter-form" >
+
+                                        <option>الكل</option>
+                                        <option> نوع1</option>
+                                        <option> نوع2</option>
+                                    </select>
+                                </div>
+
+
+                            </div>
+
+                        </div>
+                        <div class="col-lg-2 mt-3 col-sm-4 col-md-4 col-12">
+                            <label class="search-icon">  <input type="text" class="search" ></label>
+
+                        </div>
+
+                    </div>
+
+                    <div class="row m-4">
+
+
+                        <div class="float-left ">
+
+
+                            <a href="users2.html">
+                                <button class="add-crepto mr-2 mb-2  ">أضافة مجموعة</button>
+                            </a>
+
+
+                            <button class="upload-excel mr-2 mb-2 ">أدخال عن طريق ملف</button>
+
+
+                            <button class="export-excel mr-2 mb-2">أخراج كاملف اكسيل</button>
+
+
+
+                        </div>
+
+                    </div>
+
+                    <div class="row m-3 justify-content-center ">
+                        <div class="col-lg-10 ">
+
+                            <table class="table   zadnatable ">
+                                <thead >
+                                <tr >
+                                    <th>الكود</th>
+                                    <th>اسم المجموعة</th>
+                                    <th>الصلاحيات</th>
+                                    <th>العمليات</th>
+
+                                </tr>
+                                </thead>
+                                <tbody>
+
+
+                                <tr>
+                                    <td>1</td>
+                                    <td>بلح1</td>
+                                    <td>الصنف1</td>
+                                    <td class="query-td"><i class="fas fa-edit row-edit-icon"  title="Edit"></i> <i class="fas fa-trash-alt delete-icon" title="Delete"></i><i class="fas fa-eye" title="View"></i></td>
+
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>بلح2</td>
+                                    <td>الصنف2</td>
+                                    <td> </td>
+
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>بلح3</td>
+                                    <td>الصن31</td>
+                                    <td> </td>
+
+                                </tr>
+
+
+                                <tr>
+                                    <td>1</td>
+                                    <td>بلح1</td>
+                                    <td>الصنف1</td>
+                                    <td class="query-td"><i class="fas fa-edit row-edit-icon"  title="Edit"></i> <i class="fas fa-trash-alt delete-icon" title="Delete"></i><i class="fas fa-eye" title="View"></i></td>
+
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>بلح2</td>
+                                    <td>الصنف2</td>
+                                    <td> </td>
+
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>بلح3</td>
+                                    <td>الصن31</td>
+                                    <td> </td>
+
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>بلح3</td>
+                                    <td>الصن31</td>
+                                    <td> </td>
+
+                                </tr>
+
+
+                                <tr>
+                                    <td>1</td>
+                                    <td>بلح1</td>
+                                    <td>الصنف1</td>
+                                    <td class="query-td"><i class="fas fa-edit row-edit-icon"  title="Edit"></i> <i class="fas fa-trash-alt delete-icon" title="Delete"></i><i class="fas fa-eye" title="View"></i></td>
+
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>بلح2</td>
+                                    <td>الصنف2</td>
+                                    <td> </td>
+
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>بلح3</td>
+                                    <td>الصن31</td>
+                                    <td> </td>
+
+                                </tr>
+                            </table></div>
+
+
+
+
+                    </div>
+
+
+                </div>
+
+            </div>
+            <!-- /.tab-pane -->
+
+        </div>
+        <!-- /.tab-pane -->
+    </div>
+
+
+
+    <div id="deletemodal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content modalbg-add">
+                <div class="modal-header d-flex flex-row-reverse">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title ">حذف</h4>
+                </div>
+                <div class="modal-body">
+                    <p>حذف نوع محصول؟</p>
+                </div>
+                <div class="modal-footer">
+                    <a href="#" id="btnYes" class="danger btn btn-primary ">نعم</a>
+                    <a href="#" data-dismiss="modal" aria-hidden="true" class="btn btn-danger ">لا</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+</section>
+<!--نهايه اصناف المحصول-->
+
+<!-- Scripts -->
+<script src="../dist/jquery/jquery-3.3.1.min.js"></script>
+<script src="../dist/plugins/Export-Html-Table-To-Excel-Spreadsheet-using-jQuery-table2excel/../dist/jquery.table2excel.js"></script>
+
+<script src="../dist/js/popper.min.js"></script>
+<script src="../dist/js/bootstrap4-rtl.js"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+<script src="../dist/plugins/neighbordog-jquery-paginate-cea0026/src/jquery.paginate.js"></script>
+
+<script src="../dist/js/datatable.js"></script>
+<script src="../dist/js/model.js"></script>
+<script src="../dist/js/Taction.js"></script>
+<script src="../dist/js/users.js"></script>
+
+
+
+<script>
+        
+			$(document).ready(function ($) {
+    $('#addgroup').click(function () {
+if ($("#name-text").val()== '')
+{
+   
+   }else
+				$("#myUL").prepend("<li class='item'>" + $('#name-text').val() + "</li>");
+
+
+
+
+				});
+                
+                
+    $('#add-item').click(function () {
+if ($("#name-text-kind").val()== '')
+{
+   
+   }else
+				$("#myUL2").prepend("<li>" +
+                                    "<input type='checkbox' style='float:left'/>"+ $('#name-text-kind').val() + "</li>");
+
+
+
+
+				});
+			});
+
+//  $( ".item" ).click(function() { // var item= $(this).text(); // // $( "#selected-value" ).text( item); // console.log(item) //});
+$(document).on('click','.item',function(){
+    var item= $(this).text();
+        
+       $( "#selected-value" ).text( item);
+        console.log(item)
+});
+    
+  $(document).on('click','.user-tab',function(){
+  
+        $('.user-tab').removeClass('active');
+      $(this).addClass('active');
+
+});
+    
+    </script>
+
+
+
+</body>
+</html>

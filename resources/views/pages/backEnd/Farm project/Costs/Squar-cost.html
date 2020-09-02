@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="arabic" dir="rtl">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <title>Zadna</title>
+
+
+
+    <link rel="stylesheet" href="../dist/css/popper.css">
+    <link href="../dist/css/bootstrap4-rtl.css" rel="stylesheet">
+    <link rel="stylesheet" href="../dist/svg-with-js/css/fa-svg-with-js.css">
+    <!--  table css -->
+    <link rel="stylesheet" href="../dist/plugins/neighbordog-jquery-paginate-cea0026/src/jquery.paginate.css">
+    <!-- our style -->
+    <link rel="stylesheet" href="../dist/css/zadna-str.css">
+    <link rel="stylesheet" href="../dist/css/generalSet.css">
+    <link rel="stylesheet" href="../dist/css/cropTypes.css">
+    <link href="../dist/css/madona.css" rel="stylesheet">
+    <link href="../dist/css/PopupStyle.css" rel="stylesheet">
+
+
+
+
+
+</head>
+
+<body>
+    <div class="top row">
+        <div class="col-lg-6 col-sm-6 col-6 ">
+            <a class="navbar-brand" href="#"><img src="../dist/imgs/%D8%B2%D8%A7%D8%AF%D9%86%D8%A7-logo-white.png" style="width: 50px"></a>
+        </div>
+        <div class="col-lg-6 col-sm-6 col-6 icons-div">
+            <div class="icons ">
+                <a href="#"> <img src="../dist/imgs/logout.png" width="30px"></a>
+                <a href="#"> <i class="fas fa-bell"></i></a>
+
+            </div>
+        </div>
+
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light bg-color ">
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item ">
+                    <a class="nav-link" href="#">الرئيسية<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="../settings/index%20.html">اعدادات عامة</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../fertilizing/fertilizing.html">عمليات زراعية</a>
+                </li>
+                <li class="nav-item  ">
+                    <a class="nav-link " href="../crew/crew.html">طاقم العمل</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../store/store.html">المخزن</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../experiments/experments.html">تجارب</a>
+                </li>
+                <li class="nav-item  ">
+                     <a class="nav-link" href="../maintaince/maintenance.html">صيانة</a>
+                   
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../mission/mission.html">تعين مهمة</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="../costs/cost.html">تكاليف</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="../Seasons/Season.html">مواسم</a>
+                </li>
+                  <li class="nav-item  ">
+                    <a class="nav-link " href="../Diseases/Diseases.html">الامراض</a>
+                </li>
+            </ul>
+        
+        </div>
+    </nav>
+    <!--بدايه اصناف المحصول-->
+    <section class="content cropType">
+        <div class="top-bar">
+
+            <h6> <img src="../dist/imgs/5AMAT.png" width=25px height=25px/> تكاليف > تكلفة المربعات </h6>
+        </div>
+        <div class="Tparent">
+
+            <div class="row ml-3 mr-3 mt-3 p-3 filter-search-box">
+                <div class="col-lg-10">
+
+
+
+
+
+                </div>
+                <div class="col-lg-2 mt-3 col-sm-4 col-md-4 col-12">
+                    <label class="search-icon">  <input type="text" class="search" id="myInput"></label>
+
+                </div>
+
+            </div>
+
+            <div class="row m-4">
+
+
+                <div class="float-left ">
+
+
+
+
+                    <button class="upload-excel mr-2 mb-2 ">أدخال عن طريق ملف</button>
+
+
+
+
+
+
+                </div>
+
+            </div>
+
+            <div class="row m-3 justify-content-center ">
+                <div class="col-lg-10 ">
+                    <div class="responsive">
+                        <table class="table zadnatable mainTable" tableId="11">
+                            <thead>
+                                <tr>
+                                    <th >الكود</th>
+                                    <th >كود المربع </th>
+                                    <th >الموقع</th>
+                                    <th> عدد النخل </th>
+                                    <th >التكلفة العامة</th>
+
+                                    <th scope="col" class="actions"><i class="fas fa-bars"></i></th>
+
+                                </tr>
+                            </thead>
+                            <tbody>
+
+
+                                <tr rowId="1">
+                                    <td ><input type="number" class="form-control addon " value="1" disabled></td>
+                                    <td ><input type="number" class="form-control col-val addon " value="1279" disabled></td>
+
+                                    <td ><input type="text" class="form-control col-val addon" value="loc12" disabled></td>
+
+                                    <td ><input type="number" class="form-control col-val addon" value="123123" disabled></td>
+                                    <td ><input type="number" class="form-control col-val addon" value="1000" disabled></td>
+                                    <td class="query-td"><i class="fas fa-trash-alt delete-icon" title="Delete"></i>
+                                        <i class="fas fa-eye view-row" title="View" data-toggle="modal" data-target="#EditTypeModal"></i></td>
+
+                                </tr>
+                                <tr rowId="2">
+                                    <td ><input type="number" class="form-control addon " value="1" disabled></td>
+                                    <td ><input type="number" class="form-control col-val  addon" value="1279" disabled></td>
+
+                                    <td><input type="text" class="form-control col-val  addon" value="loc122" disabled></td>
+
+                                    <td ><input type="number" class="form-control col-val addon" value="123123"></td>
+                                    <td ><input type="number" class="form-control col-val addon" value="200" disabled></td>
+
+                                    <td class="query-td"><i class="fas fa-trash-alt delete-icon" title="Delete"></i>
+                                        <i class="fas fa-eye view-row" title="View" data-toggle="modal" data-target="#EditTypeModal"></i></td>
+
+                                </tr>
+
+
+
+                        </table>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <div class="modal fade" id="EditTypeModal" viewrow tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content modalbg">
+                <div class="modal-header modal-border">
+                    <h5 class="modal-title"> كود المربع</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body modal-space">
+                    <div class="table-responsive">
+                        <table class="table tableborder">
+
+                            <thead>
+                                <tr>
+
+                                    <th scope="col">الكود</th>
+                                    <th scope="col">كود المربع</th>
+                                    <th scope="col">الموقع</th>
+                                    <th scope="col">عدد النخل</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+
+                                    <td class="InputNum"><input type="number" class="form-control addons " value="1" disabled></td>
+                                    <td class="InputNum ">
+                                        <input type="number" class="form-control addons col-val" value="" disabled>
+                                    </td>
+
+
+                                    <td class="InputNum "><input type="text" class="form-control addons col-val" value="" disabled></td>
+
+
+
+                                    <td class="InputNum "><input type="number" class="form-control addons col-val" value="" disabled></td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                        <table class="table tableborder">
+
+                            <thead>
+                                <tr>
+
+                                    <th scope="col"> عدد الاعمدة</th>
+                                    <th scope="col"> عدد الصفوف</th>
+                                    <th scope="col">التكلفة</th>
+
+                                    <th scope="col">التكلفة/نخلة</th>
+
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+
+                                    <td class="InputNum">لاول</td>
+
+                                    <td class="InputNum">اي حاجه</td>
+                                    <td><input type="number" class="form-control col-val addons"></td>
+                                    <td>12233</td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+<div class="Tparent">
+                        <div class="row m-4">
+                            <div class="col-lg-12 col-sm-12 col-12 ">
+                                <div style="margin-right: 6% ; margin-top: 2%">
+                                    <a class="fas fa-caret-left " style="color:green" data-toggle="collapse" href="#collapseExample1"></a>
+                                    <span class="faults-types1">  النخل: </span>
+
+                                </div>
+                                <hr class="light-hr1" style="background-color: #58b82a!important;">
+
+                                <div class="collapse show " id="collapseExample1">
+                                    <table class="table zadnatable mainTable" tableId="13">
+                                        <thead style="text-align: center">
+                                            <tr>
+                                                <th scope="col">الكود</th>
+                                                <th scope="col">الموقع</th>
+                                               
+                                                <th scope="col"> التكلفة الكلية</th>
+                                                <th class="actions"><i class="fas fa-bars"></i></th>
+                                            </tr>
+                                        </thead>
+
+                                        <tbody>
+                                            <tr rowId2="89">
+                                                <td><input type="number" class="form-control  addon" value="12" disabled></td>
+                                                <td><input type="text" class="form-control  addon" value="loc3" disabled></td>
+                                               
+                                                <td><input type="number" class="form-control  addon" value="125" disabled></td>
+                                                <td class="query-td"><i class="fas fa-trash-alt delete-icon" title="Delete"></i>
+                                                    <a href="#" data-toggle="modal" data-target="#add-kind"><i class="fas fa-eye edit-row" ></i></a> </td>
+                                            </tr>
+                                        </tbody>
+
+                                    </table>
+
+
+                                </div>
+                            </div>
+                        </div>
+</div>
+                    </div>
+                </div>
+                <div class="modal-footer footer-border">
+
+                    <button type="button" class="btn close-btn" data-dismiss="modal" style="margin-left: 40%!important;">غلق</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="deletemodal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content modalbg-add">
+                <div class="modal-header d-flex flex-row-reverse">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title ">حذف</h4>
+                </div>
+                <div class="modal-body">
+                    <p>هل تريد الحذف ؟</p>
+                </div>
+                <div class="modal-footer">
+                    <a href="#" id="btnYes" class="danger btn btn-primary ">نعم</a>
+                    <a href="#" data-dismiss="modal" aria-hidden="true" class="btn btn-danger ">لا</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    
+        
+        <div class="modal fade" id="add-kind" editrow tabindex="-1" role="dialog" aria-labelledby="add-kind2" aria-hidden="true">
+            
+        <div class="modal-dialog " role="document">
+            <div class="modal-content modalbg-add">
+                <div class="modal-header header-border">
+                    <h5 class="modal-title" id="add-kind2">اضافة صنف</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+                </div>
+                <div class="modal-body ">
+                    <div class="row">
+                     
+                        <div class="col-6">
+                            <label> التكلفة الكلية: 
+                               <input type="text" class="form-control col-val2 addons " disabled>    
+                            </label>
+
+                        </div>
+                         <div class="col-6">
+                            <label>الموقع: 
+                               <input type="text" class=" form-control col-val2 addons " disabled>    
+                            </label>
+
+                        </div>
+                    </div>
+                    <div class="row">
+                       
+                        <div class="col-12">
+                            <label> التكلفة الاضافية: 
+                               <input type="text" class=" form-control col-val2 addons " disabled>    
+                            </label>
+
+                        </div>
+                    </div>
+                    <div class="row m-4">
+                        <div class="col-lg-12 col-sm-12 col-12 ">
+                            <div style="margin-right: 6% ; margin-top: 2%">
+                                <a class="fas fa-caret-left " style="color:green" data-toggle="collapse" href="#collapseExample11"></a>
+                                <span class="faults-types1">  تفاصيل التكلفة الاضافية: </span>
+
+                            </div>
+                            <hr class="light-hr1" style="background-color: #58b82a!important; width:50%!important">
+
+                            <div class="collapse show" id="collapseExample11">
+                                <table class="table zadnatable mainTable" tableId="130">
+                                    <thead style="text-align: center">
+                                        <tr>
+                                            <th scope="col">الكود</th>
+                                            <th scope="col">نوع العملية</th>
+                                            <th scope="col">تاريخ الاستخدام</th>
+                                            <th scope="col"> التكلفة </th>
+
+                                        </tr>
+                                    </thead>
+
+                                    <tbody>
+                                        <tr rowId="1110">
+                                            <td>11</td>
+                                            <td>1000</td>
+                                            <td>200</td>
+                                            <td>190</td>
+
+                                        </tr>
+                                    </tbody>
+
+                                </table>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer footer-border">
+
+                    <button type="button" class="btn close-btn" data-dismiss="modal" aria-label="Close" id="add-item" style="margin-left: 40%!important;">غلق</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="../dist/jquery/jquery-3.3.1.min.js"></script>
+    <script src="../dist/js/popper.min.js"></script>
+    <script src="../dist/js/bootstrap4-rtl.js"></script>
+    <script src="../dist/svg-with-js/js/fontawesome-all.min.js"></script>
+
+    <script src="../dist/js/datatable.js"></script>
+    <script src="../dist/plugins/neighbordog-jquery-paginate-cea0026/src/jquery.paginate.js"></script>
+
+    <script src="../dist/js/custom-file-input.js"></script>
+
+ 
+    <script src="../dist/plugins/select2/select2.full.min.js"></script>
+    <!--<script src="../dist/js/wells.js"></script>-->
+    <script src="../dist/js/tablesfunc.js"></script>
+
+    <script>
+        $(function() {
+
+            $(".select2").select2();
+
+
+
+        });
+        $(document).ready(function() {
+            $(document).on("click", ".view-row", function() {
+                var row = $(this).parents("tr");
+
+                var cells = row.find("td input");
+                var sLoc = $("#EditTypeModal").find("select.col-val").select2();
+                var inLoc = $("#EditTypeModal").find("input.col-val");
+
+                var Rowid = row.attr("rowid");
+                $(".modal").attr("viewrow", Rowid);
+
+                $("#EditTypeModal").find(".form-control").attr("disabled", true);
+
+                ViewRow(cells, sLoc, inLoc);
+
+            });
+            /*     modal2   */
+            
+                $(document).on("click", ".edit-row", function() {
+                var row = $(this).parents("tr");
+
+                var cells = row.find("td input");
+                var sLoc = $("#add-kind").find("select.col-val2").select2();
+                var inLoc = $("#add-kind").find("input.col-val2");
+
+                var Rowid2 = row.attr("rowid2");
+                $("#add-kind").attr("editrow", Rowid2);
+
+                $("#add-kind").find(".form-control").attr("disabled", true);
+                
+                    console.log(inLoc);
+                ViewRow(cells, sLoc, inLoc);
+
+            });
+        });
+    </script>
+
+</body>
+</html>

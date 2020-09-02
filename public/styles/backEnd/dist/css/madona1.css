@@ -1,0 +1,106 @@
+.faults-types {
+    padding: 0;
+    color:#fc782e;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: auto;
+    z-index: 1000;
+    display: none;
+    float: right;
+    min-width: 10rem;
+    padding: .5rem 0;
+    margin: .125rem 0 0;
+    font-size: 1rem;
+    color: #5f666d;
+    text-align: center;
+    list-style: none;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 0;
+}
+
+.dropdown-item {
+    display: block;
+    width: 100%;
+    padding: .25rem 1.5rem;
+    clear: both;
+    font-weight: 400;
+    color: #2ca224;
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+    margin-bottom: 10px;
+    border: 1px solid #eeeeee;
+    border-radius: 10px;
+}
+.faults-types {
+    color: #fc782e;
+    padding-right: 4%;
+    padding-top: 3%;
+}
+.light-hr {
+     width: 94%;
+    background-color: #fc782e;
+    height: 3px;
+}
+.borderless td, .borderless th {
+    border: none;
+}
+.table1 {
+    width: 94% ;
+    max-width: 100%;
+    margin-bottom: 1rem;
+    background-color: transparent;
+    margin: 0 auto;
+    margin-top: 3%;
+}
+.table2 {
+    width: 94% ;
+    max-width: 100%;
+    margin-bottom: 1rem;
+    background-color: transparent;
+    margin: 0 auto;
+    margin-top: 3%;
+}
+
+.table2 td {
+    padding: 16px 10px !important;
+}
+
+.table2 thead th {
+    border-bottom: 2px solid #4d4f52;
+}
+.table1 thead th {
+    border-bottom: 2px solid green;
+}
+
+.table-bordered td, .table-bordered th {
+    
+    border: 1px solid #4d4f52;
+}
+.light-hr1 {
+    width: 15%;
+    margin-right: 4%;
+    background-color: #d8cdc6;
+    height: 3px;
+}
+.faults-types1{
+   color:  #8a8480;
+    padding-right: 1%;
+    
+}
+.border-style {
+    border-left: none;
+    border-top:none;
+    border-right: none;
+}
+.modal-title  {
+    background-color: #fc782e;
+    padding: 12px;
+    border-radius: 50%;
+    color: #ffffff;
+}

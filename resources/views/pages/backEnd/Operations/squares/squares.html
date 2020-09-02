@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="arabic" dir="rtl">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <title>عمليات زراعيه - المربعات</title>
+
+
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="../../dist/css/popper.css">
+    <link href="../../dist/css/bootstrap4-rtl.css" rel="stylesheet">
+    <!--<link rel="stylesheet" href="../../dist/fonts/fontawesome-free-5.0.8/web-fonts-with-css/css/fontawesome.css">-->
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+    <!--  table css -->
+    <link rel="stylesheet" href="../../dist/plugins/neighbordog-jquery-paginate-cea0026/src/jquery.paginate.css">
+    <!-- our style -->
+    <link rel="stylesheet" href="../../dist/css/zadna-str.css">
+    <link rel="stylesheet" href="../../dist/css/generalSet.css">
+    <link rel="stylesheet" href="../../dist/css/cropTypes.css">
+    <link rel="stylesheet" href="../../dist/css/madona.css">
+    <link href="../../dist/css/PopupStyle.css" rel="stylesheet">
+    <!-- Select2 -->
+    <link rel="stylesheet" href="../../dist/plugins/select2/select2.min.css">
+    <link rel="stylesheet" href="../../dist/css/side-menu.css">
+
+
+</head>
+
+<body>
+    <div class="top row">
+        <div class="col-lg-6 col-sm-6 col-6 ">
+            <a class="navbar-brand" href="#">
+                <img src="dist/imgs/%D8%B2%D8%A7%D8%AF%D9%86%D8%A7-logo-white.png" style="width: 50px">
+            </a>
+        </div>
+        <div class="col-lg-6 col-sm-6 col-6 icons-div">
+            <div class="icons ">
+                <a href="#">
+                    <img src="dist/imgs/logout.png" width="30px">
+                </a>
+                <a href="#">
+                    <i class="fas fa-bell"></i>
+                </a>
+
+            </div>
+        </div>
+
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light bg-color ">
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item ">
+                    <a class="nav-link" href="#">الرئيسية
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="#">اعدادات عامة</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">عمليات زراعية</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="#">طاقم العمل</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">المخزن</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">تجارب</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link " href="#">صيانة</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">تعين مهمة</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">تكاليف</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="#">مواسم</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!--بدايه اصناف المحصول-->
+    <section class="content cropType">
+        <div class="top-bar">
+
+            <h6> عمليات زراعية > المربعات </h6>
+        </div>
+
+        <div class="top-links mt-2">
+            <div class="row">
+                <div class="col-6">
+                    <img src="#" alt="image">
+                    <a src="#" class="ml-4" style="text-decoration: underline;cursor: pointer"> توقيع المربعات</a>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <img src="#" alt="image">
+                    <a src="#" class="ml-4" style="text-decoration: underline;cursor: pointer"> شبكة الري</a>
+
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="row m-0">
+
+            <div class="col-sm-2 col-12  p-0" style="background-color: #f3f3f3; border-left: 1px solid rgb(0, 0, 0);margin-top: 3.3rem">
+                <div id="sidebar">
+
+                    <div class="list-group panel">
+
+                        <a href="#menu1" class="list-group-item collapsed active show" data-toggle="collapse" data-parent="#sidebar" aria-expanded="false">
+                            <span class="hidden-sm-down">تجهيزات ماقبل الزراعه</span>
+                        </a>
+                        <div class="collapse show" id="menu1">
+                            <a href="../wells/wells.html" class="list-group-item  " data-parent="#menu1">الابار </a>
+
+                            <a href="../squares/squares.html" class="list-group-item active" data-parent="#menu1">مربعات</a>
+
+                            <a href="../intg_work/intg-work.html" class="list-group-item" data-parent="#menu1">شبكة الري</a>
+                            <a href="../jura-proc/jura-proc.html" class="list-group-item" data-parent="#menu1">تجهيز الجوره</a>
+                        </div>
+
+                        <a href="#menu2" class="list-group-item collapsed" data-toggle="collapse" data-parent="#sidebar" aria-expanded="false">
+                            <span class="hidden-sm-down">عمليات الغرس</span>
+                        </a>
+                        <div class="collapse" id="menu2">
+                            <a href="../planting/planting.html" class="list-group-item" data-parent="#menu2">الغرس </a>
+
+                            <a href="../washing/washing.html" class="list-group-item" data-parent="#menu2">الغسيل</a>
+                            <a href="../protection/protection.html" class="list-group-item" data-parent="#menu2">الوقاية</a>
+                            <a href="../nutria/nutria.html" class="list-group-item" data-parent="#menu2">الكيب</a>
+                        </div>
+
+                        <a href="#menu3" class="list-group-item collapsed" data-toggle="collapse" data-parent="#sidebar" aria-expanded="false">
+                            <span class="hidden-sm-down">عمليات ماقبل الانتاج</span>
+                        </a>
+                        <div class="collapse" id="menu3">
+                            <a href="../beforerPro-irrigation/beforerPro-irrigation.html" class="list-group-item" data-parent="#menu3">ري </a>
+
+                            <a href="../fertilizing/fertilizing.html" class="list-group-item" data-parent="#menu3">تسميد</a>
+                            <a href="../protection/protection.html" class="list-group-item" data-parent="#menu3">الوقاية</a>
+                            <a href="../cur-Diseases/diseases.html" class="list-group-item" data-parent="#menu3">الأمراض الحالية</a>
+                            <a href="../Sustainable-OP/Sustainable.html" class="list-group-item" data-parent="#menu3">عمليات مستديمه</a>
+                        </div>
+
+                        <a href="#menu4" class="list-group-item collapsed" data-toggle="collapse" data-parent="#sidebar" aria-expanded="false">
+                            <span class="hidden-sm-down">عمليات مابعد الانتاج</span>
+                        </a>
+                        <div class="collapse" id="menu4">
+                            <a href="../afterPro-irrigation/afterPro-irrigation.html" class="list-group-item" data-parent="#menu4">ري </a>
+
+                            <a href="../fertilizing/fertilizing.html" class="list-group-item" data-parent="#menu4">تسميد</a>
+                            <a href="../protection/protection.html" class="list-group-item" data-parent="#menu4">الوقاية</a>
+                            <a href="../cur-Diseases/diseases.html" class="list-group-item" data-parent="#menu4">الأمراض الحالية</a>
+                            <a href="../separation/separation.html" class="list-group-item" data-parent="#menu4">فصل فسائل</a>
+                            <a href="../Sustainable-OP/Sustainable.html" class="list-group-item" data-parent="#menu4">عمليات مستديمه</a>
+
+                        </div>
+
+                        <a href="#menu5" class="list-group-item collapsed" data-toggle="collapse" data-parent="#sidebar" aria-expanded="false">
+                            <span class="hidden-sm-down">الحصاد</span>
+                        </a>
+                        <div class="collapse" id="menu5">
+                            <a href="../harvest/harvest.html" class="list-group-item" data-parent="#menu5">الحصاد</a>
+                            <a href="../Sustainable-OP/Sustainable.html" class="list-group-item" data-parent="#menu5">عمليات مستديمه</a>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col-sm-10 col-10 p-0">
+                <div class="Tparent">
+
+                    <div class="row ml-3 mr-3 mt-3 p-3 filter-search-box ">
+                        <div class="col-lg-10">
+
+
+
+
+                        </div>
+                        <div class="col-lg-2 mt-3 col-sm-4 col-md-4 col-12">
+                            <label class="search-icon">
+                                <input type="text" class="search" id="myInput2">
+                            </label>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="row m-3 justify-content-center ">
+                        <div class="col-lg-12 ">
+
+                            <table class="table zadnatable mainTable" tableId="11">
+                                <thead>
+                                    <tr>
+                                        <th>الكود</th>
+                                        <th>الاسم</th>
+                                        <th>الموقع</th>
+                                        <th>عدد الاعمدة</th>
+                                        <th>عدد الصفوف</th>
+                                        <th class="actions">
+                                            <i class="fas fa-bars"></i>
+                                        </th>
+
+                                    </tr>
+                                </thead>
+                                <tbody>
+
+
+                                    <tr rowId="1">
+                                        <td>
+                                            <div class="form-group InputGroup">
+                                                <input type="text" class="form-control td-input" value="1" disabled>
+
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="form-group InputGroup">
+                                                <input type="text" class="form-control td-input" value="مزارع" disabled>
+
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="form-group InputGroup">
+                                                <input type="text" class="form-control td-input" value="مزارع" disabled>
+
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="form-group InputGroup">
+                                                <input type="text" class="form-control  td-input" value="محاسب" disabled>
+
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="form-group InputGroup">
+                                                <input type="text" class="form-control  td-input" value="5" disabled>
+
+                                            </div>
+                                        </td>
+
+                                        <td class="query-td">
+                                            <a class="text-dark" href="squares-tabs.html">
+                                                <i class="fas fa-eye view-row"></i>
+                                            </a>
+                                        </td>
+
+                                    </tr>
+                                    <tr rowId="2">
+                                        <td>
+                                            <div class="form-group InputGroup">
+                                                <input type="text" class="form-control td-input" value="44" disabled>
+
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="form-group InputGroup">
+                                                <input type="text" class="form-control td-input" value="مهندس" disabled>
+
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="form-group InputGroup">
+                                                <input type="text" class="form-control  td-input" value="دكتور" disabled>
+
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="form-group InputGroup">
+                                                <input type="text" class="form-control  td-input" value="7" disabled>
+
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="form-group InputGroup">
+                                                <input type="text" class="form-control  td-input" value="7" disabled>
+
+                                            </div>
+                                        </td>
+                                        <td class="query-td">
+                                            <a class="text-dark" href="squares-tabs.html">
+                                                <i class="fas fa-eye view-row "></i>
+                                            </a>
+                                    </tr>
+
+
+
+                            </table>
+                        </div>
+
+
+
+
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <div id="deletemodal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content modalbg-add">
+                <div class="modal-header d-flex flex-row-reverse">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title ">حذف</h4>
+                </div>
+                <div class="modal-body">
+                    <p>حذف نوع محصول؟</p>
+                </div>
+                <div class="modal-footer">
+                    <a href="#" id="btnYes" class="danger btn btn-primary ">نعم</a>
+                    <a href="#" data-dismiss="modal" aria-hidden="true" class="btn btn-danger ">لا</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- Scripts -->
+    <script src="../../dist/jquery/jquery-3.3.1.min.js"></script>
+    <script src="../../dist/plugins/Export-Html-Table-To-Excel-Spreadsheet-using-jQuery-table2excel/dist/jquery.table2excel.js"></script>
+    <script src="../../dist/js/popper.min.js"></script>
+    <script src="../../dist/js/bootstrap4-rtl.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl"
+        crossorigin="anonymous"></script>
+    <!--<script src="dist/plugins/datatables.net-bs/js/datatable.js"></script>-->
+    <script src="../../dist/plugins/neighbordog-jquery-paginate-cea0026/src/jquery.paginate.js"></script>
+    <script src="../../dist/js/datatable.js"></script>
+    <script src="../../dist/js/model.js"></script>
+
+    <script src="../../dist/js/tablesfunc.js"></script>
+    <!-- Select2 -->
+    <script src="../../dist/plugins/select2/select2.full.min.js"></script>
+
+
+</body>
+
+</html>

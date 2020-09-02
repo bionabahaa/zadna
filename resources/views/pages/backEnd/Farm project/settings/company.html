@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="arabic" dir="rtl">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <title>Zadna</title>
+
+
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="../dist/css/popper.css">
+    <link href="../dist/css/bootstrap4-rtl.css"rel="stylesheet">
+    <link rel="stylesheet" href="../dist/fonts/fontawesome-free-5.0.8/web-fonts-with-css/css/fontawesome.css">
+<!-- data tabffle css -->
+    <link rel="stylesheet" href="../dist/plugins/datatables.net-bs/css/datatable.css">
+    <!-- our style -->
+    <!--  table css -->
+    <link rel="stylesheet" href="../dist/plugins/neighbordog-jquery-paginate-cea0026/src/jquery.paginate.css">
+    <link rel="stylesheet" href="../dist/css/zadna-str.css">
+    <link rel="stylesheet" href="../dist/css/generalSet.css">
+    <link rel="stylesheet" href="../dist/css/cropTypes.css">
+    <link href="../dist/css/PopupStyle.css"rel="stylesheet">
+     <!-- Select2 -->
+  <link rel="stylesheet" href="../dist/plugins/select2/select2.min.css">
+    <link href="../dist/css/madona.css" rel="stylesheet">
+    
+    
+
+
+
+
+
+</head>
+<body>
+<div class="top row">
+    <div class="col-lg-6 col-sm-6 col-6 ">
+        <a class="navbar-brand" href="#"><img src="../dist/imgs/%D8%B2%D8%A7%D8%AF%D9%86%D8%A7-logo-white.png" style="width: 50px"></a>
+    </div>
+    <div class="col-lg-6 col-sm-6 col-6 icons-div">
+        <div class="icons ">
+            <a href="#"> <img src="../dist/imgs/logout.png" width="30px"></a>
+            <a href="#"> <i class="fas fa-bell"></i></a>
+
+        </div>
+    </div>
+
+</div>
+<nav class="navbar navbar-expand-lg navbar-light bg-light bg-color ">
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item ">
+                <a class="nav-link" href="#">الرئيسية<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#">اعدادات عامة</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">عمليات زراعية</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " href="#">طاقم العمل</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="#">المخزن</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">تجارب</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " href="#">صيانة</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="#">تعين مهمة</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">تكاليف</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " href="#">مواسم</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<!--بدايه اصناف المحصول-->
+<section class="content cropType">
+    <div class="top-bar">
+        <h6>اعدادات عامه > الشركة</h6>
+    </div>
+    <div class="Tparent" >
+
+        <div class="row ml-3 mr-3 mt-3 p-3 filter-search-box">
+            <div class="col-lg-10">
+                <!--
+                            <div class="row">
+                             <div class="col-lg-2">
+                               <label>النوع :</label>
+                             </div>
+                                 <div class="col-lg-3">
+                               <label>فترة الشراء :</label>
+                             </div>
+                            </div>
+                -->
+                <div class="row filter-res">
+
+                    <div class="col-lg-2 col-sm-12 col-md-12 col-12">
+                        <div >
+                            <label>النوع :</label>
+                        </div>
+                        <select class="form-control filter-form" >
+
+                            <option>الكل</option>
+                            <option> نوع1</option>
+                            <option> نوع2</option>
+                        </select>
+                        
+
+                    </div>
+
+                   
+
+
+
+
+                </div>
+
+
+
+            </div>
+            <div class="col-lg-2 mt-3 col-sm-4 col-md-4 col-12">
+                <label class="search-icon">  <input type="text" class="search" id="myInput"></label>
+
+            </div>
+
+        </div>
+
+        <div class="row m-4">
+
+
+            <div class="float-left ">
+
+
+                <button class="add-crepto mr-2 mb-2  " data-toggle="modal" data-target="#exampleModalLong">أضافة بيانات الشركة</button>
+
+
+               
+
+
+
+            </div>
+
+        </div>
+        
+        
+<div class="row m-4 tab-top" id="hidden-table" hidden >
+    <div class="col-lg-12 col-sm-12 col-12 ">
+        <table class="table borderless table1 " >
+            <thead>
+            <tr>
+                <th scope="col">اسم الشركة</th>
+                 <th scope="col"></th>
+                <th scope="col">الهاتف</th>
+                <th scope="col"></th>
+                <th scope="col">البريد الالكتروني</th>
+                <th scope="col"></th>
+                <th scope="col">مجال العمل</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr class="border_bottom" rowId="1">
+                <td id="name1"></td>
+                <th></th>
+                <td id="phone1"></td>
+                  <th></th>
+                <td id="email1"></td>
+                  <th></th>
+               <td id="field1"></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+    <div class="col-lg-12 col-sm-12 col-12 ">
+        <table class="table borderless table1 " style="margin-top: 7%">
+            <thead>
+            <tr>
+             <th scope="col">العنوان</th>
+
+            </tr>
+            </thead>
+            <tbody>
+            <tr class="border_bottom">
+
+                <td id="address1"></td>
+                
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+<div class="col-lg-12 col-sm-12 col-12 ">
+        <table class="table borderless table1 " style="margin-top: 7%">
+            <thead>
+            <tr>
+               
+                <th scope="col">المدير</th>
+                 <th scope="col"></th>
+                 <th scope="col">العضو المنتدب</th>
+             
+                
+
+            </tr>
+            </thead>
+            <tbody>
+            <tr class="border_bottom">
+
+                <td id="manager1"></td>
+                <th></th>
+                <td id="member1"></td>
+              
+              
+            </tr>
+            </tbody>
+        </table>
+    </div>
+   
+
+<div class="col-lg-12 col-sm-12 col-12 ">
+        <table class="table borderless table1 " style="margin-top: 7%">
+            <thead>
+            <tr>
+                <th scope="col">ترخيص الشركة</th>
+                <th scope="col"></th>
+                <th scope="col"> عقد الشركة</th>
+            
+                
+
+            </tr>
+            </thead>
+            <tbody>
+            <tr class="border_bottom">
+
+                <td id="license1"></td>
+               <th></th>
+                <td id="contract1"></td>
+                 
+            </tr>
+            </tbody>
+        </table>
+    </div>
+   
+        <button type="button" class="btn edit-btn ml-5 mt-5">تعديل</button>
+        <button type="button" class="btn save-btn ml-5 mt-5 " id="save-edit" hidden >حفظ</button>
+    
+    
+</div>
+        
+        
+
+
+    </div>
+
+</section>
+<!--نهايه اصناف المحصول-->
+<!-- basic Modal -->
+<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content modalbg">
+            <div class="modal-header modal-border">
+                <h5 class="modal-title" >اضافة بيانات الشركة</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body modal-space">
+                <div class="table-responsive">
+
+                    <table class="table tableborder ">
+
+                        <thead>
+                        <tr>
+
+                            <th scope="col">اسم الشركة</th>
+                            <th scope="col">الهاتف</th>
+                            <th scope="col">البريد الالكتروني</th>
+                            <th scope="col">مجال العمل</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+
+                            <td class="InputNum"><div class="form-group InputGroup">
+                                <input type="text" class="form-control numric" min="0" id="name">
+
+                            </div>
+                            </td>
+                           
+                            <td class="InputNum"><div class="form-group InputGroup">
+                                <input type="text" class="form-control numric name" id="phone">
+
+                            </div></td>
+                            
+                            <td class="InputNum"><div class="form-group InputGroup">
+                                <input type="text" class="form-control numric name" id="email">
+
+                            </div></td>
+                            
+                            <td class="InputNum"><div class="form-group InputGroup">
+                                <input type="text" class="form-control numric price" min="0" id="field">
+
+                            </div></td>
+                        </tr>
+
+                        </tbody>
+                    </table>
+
+                    <table class="table tableborder">
+
+                        <thead>
+                        <tr>
+
+                            <th scope="col">العنوان</th>
+                          
+                        </thead>
+                        <tbody>
+                        <tr>
+
+                          
+                            <td class="InputNum" ><div class="form-group InputGroup">
+                                <input type="text" class="form-control numric buy-date" id="address" >
+
+                            </div></td>
+
+
+                        </tr>
+
+                        </tbody>
+                    </table>
+
+                    
+                    <table class="table tableborder">
+
+                        <thead>
+                        <tr>
+
+                            <th scope="col">المدير</th>
+                             <th scope="col">العضو المنتدب</th>
+                          
+                        </thead>
+                        <tbody>
+                        <tr>
+
+                          
+                            <td class="InputNum" ><div class="form-group InputGroup">
+                                <input type="text" class="form-control numric buy-date" id="manager">
+
+                            </div></td>
+                             
+                            
+                               <td class="InputNum" ><div class="form-group InputGroup">
+                                <input type="text" class="form-control numric buy-date" id="member">
+
+                            </div></td>
+
+                        </tr>
+
+                        </tbody>
+                    </table>
+                    
+                    
+                    <table class="table tableborder">
+
+                        <thead>
+                        <tr>
+
+                            <th scope="col">ترخيص الشركة</th>
+                             <th scope="col"> عقد الشركة</th>
+                          
+                        </thead>
+                        <tbody>
+                        <tr>
+
+                          
+                            <td class="InputNum" ><div class="form-group InputGroup">
+                                <input type="text" class="form-control numric buy-date" id="license">
+
+                            </div></td>
+                             
+                            
+                               <td class="InputNum" ><div class="form-group InputGroup">
+                                <input type="text" class="form-control numric buy-date" id="contract">
+
+                            </div></td>
+
+                        </tr>
+
+                        </tbody>
+                    </table>
+                    
+                    
+                    
+                    
+                     <table class="table tableborder" id="table-add-kind">
+
+                        <thead>
+                        <tr>
+                          
+
+                            <th scope="col" id="add-from-model1">
+                              
+                                اضافه نوع
+                         <i data-target="#exampleModalLong2" data-toggle="modal" class="fas fa-plus-circle"></i>
+                                
+                              
+                         </th>
+                          
+                        </thead>
+                        <tbody>
+                        <tr>
+
+                          
+                            <td class="InputNum" id="add-input">1111
+                                
+
+
+                            </td>
+                             
+                            
+                          
+
+                        </tr>
+
+                        </tbody>
+                    </table>
+                    
+
+                </div>
+            </div>
+            <div class="modal-footer footer-border">
+                <button type="button" class="btn close-btn" data-dismiss="modal">غلق</button>
+                <button type="button" class="btn save-btn" id="saveModel">حفظ</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- model for add type -->
+<div class="modal fade" id="exampleModalLong2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content modalbg-add">
+            <div class="modal-header header-border">
+                <h5 class="modal-title" id="exampleModalLongTitle">اضافة نوع</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body ">
+
+                <div class="form-group center" >
+
+                    <input type="text"  id="add-from-model" class="textStyle name-text">
+                </div>
+
+            </div>
+            <div class="modal-footer footer-border">
+
+                <button type="button" class="btn add-btn" data-dismiss="modal" aria-label="Close" value="اضافه" id="addgroup">اضافة</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+    
+
+
+
+<!-- Scripts -->
+<script src="../dist/jquery/jquery-3.3.1.min.js"></script>
+<script src="../dist/plugins/Export-Html-Table-To-Excel-Spreadsheet-using-jQuery-table2excel/dist/jquery.table2excel.js"></script>
+<script src="../dist/js/popper.min.js"></script>
+<script src="../dist/js/bootstrap4-rtl.js"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+<!--<script src="../dist/plugins/datatables.net-bs/js/datatable.js"></script>-->
+<script src="../dist/plugins/neighbordog-jquery-paginate-cea0026/src/jquery.paginate.js"></script>
+<script src="../dist/js/datatable.js"></script>
+<!--<script src="../dist/js/model.js"></script>-->
+<!--<script src="../dist/js/Taction.js"></script>-->
+
+<!--
+
+<script src="../dist/js/material.js"></script>
+-->
+
+    <!-- Select2 -->
+<script src="../dist/plugins/select2/select2.full.min.js"></script>
+    
+<script>
+    
+    
+  $(function () {
+  
+    $(".select2").select2();
+
+   
+  });
+    
+    
+    ////////////add data in table////// 
+    $("#saveModel").click(function(){
+    $("#hidden-table").removeAttr("hidden");
+     $(".add-crepto").hide();   
+          var txt1 = $("#name").val();
+         $("#name1").append( txt1);
+       
+        var txt2 = $("#phone").val();
+         $("#phone1").append( txt2);
+        var txt3 = $("#email").val();
+         $("#email1").append( txt3);
+        var txt4 = $("#field").val();
+         $("#field1").append( txt4);
+        var txt5 = $("#address").val();
+         $("#address1").append( txt5);
+        var txt6 = $("#manager").val();
+         $("#manager1").append( txt6);
+        var txt7 = $("#member").val();
+         $("#member1").append( txt7);
+        var txt8 = $("#license").val();
+         $("#license1").append( txt8);
+        var txt9 = $("#contract").val();
+         $("#contract1").append( txt9);
+});
+ 
+  /////// add button in model///////
+     $("#addgroup").click(function(){
+         
+         var txt10 = $("#add-from-model").val();
+         $("#add-from-model1").empty();
+         $("#add-from-model1").append( txt10);
+         $("#add-input").empty();
+         $("#add-input").append("<input type='text'>");
+         
+         $('  <table class="table tableborder" id="table-add-kind"><thead><tr><th scope="col" id="add-from-model1">اضافه نوع<i data-target="#exampleModalLong2" data-toggle="modal" class="fas fa-plus-circle"></i></th></thead><tbody><tr><td class="InputNum" id="add-input">1111  </td> </tr> </tbody> </table> ').insertAfter("#table-add-kind");
+  
+     });
+    
+   //////// edit button////////
+    
+    
+     $(document).on("click", ".edit-btn", function (){
+        var edit=$(this);
+        var save=$("#save-edit");
+       $(".borderless td").attr("contenteditable",true);
+         $(".borderless td").css("border","1px solid");
+   
+       
+
+        edit.hide();
+        save.attr("hidden",false);
+
+        save.click(function () {
+         $(".borderless td").css("border","");;
+            $(".borderless td").attr("contenteditable",false);
+           
+
+            edit.show();
+            save.attr("hidden",true);
+
+     });
+
+
+    });
+
+    
+    
+    
+    
+    
+   
+    </script>
+
+
+</body>
+</html>

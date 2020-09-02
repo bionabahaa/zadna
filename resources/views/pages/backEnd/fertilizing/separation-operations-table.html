@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="arabic" dir="rtl">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <title>Zadna</title>
+
+
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="../dist/css/popper.css">
+    <link href="../dist/css/bootstrap4-rtl.css"rel="stylesheet">
+    <link rel="stylesheet" href="../dist/fonts/fontawesome-free-5.0.8/web-fonts-with-css/css/fontawesome.css">
+    <!--  table css -->
+    <link rel="stylesheet" href="../dist/plugins/neighbordog-jquery-paginate-cea0026/src/jquery.paginate.css">
+    <!-- our style -->
+    <link rel="stylesheet" href="../dist/css/zadna-str.css">
+    <link rel="stylesheet" href="../dist/css/generalSet.css">
+    <link rel="stylesheet" href="../dist/css/cropTypes.css">
+    <link href="../dist/css/PopupStyle.css"rel="stylesheet">
+    <!-- Select2 -->
+  <link rel="stylesheet" href="../dist/plugins/select2/select2.min.css">
+    
+    
+
+</head>
+<body>
+<div class="top row">
+    <div class="col-lg-6 col-sm-6 col-6 ">
+        <a class="navbar-brand" href="#"><img src="../dist/imgs/%D8%B2%D8%A7%D8%AF%D9%86%D8%A7-logo-white.png" style="width: 50px"></a>
+    </div>
+    <div class="col-lg-6 col-sm-6 col-6 icons-div">
+        <div class="icons ">
+            <a href="#"> <img src="../dist/imgs/logout.png" width="30px"></a>
+            <a href="#"> <i class="fas fa-bell"></i></a>
+
+        </div>
+    </div>
+
+</div>
+<nav class="navbar navbar-expand-lg navbar-light bg-light bg-color ">
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+       <ul class="navbar-nav">
+                <li class="nav-item ">
+                    <a class="nav-link" href="#">الرئيسية<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="../settings/index%20.html">اعدادات عامة</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="../fertilizing/fertilizing.html">عمليات زراعية</a>
+                </li>
+                <li class="nav-item  ">
+                    <a class="nav-link " href="../crew/crew.html">طاقم العمل</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../store/store.html">المخزن</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="../experiments/experments.html">تجارب</a>
+                </li>
+                <li class="nav-item  ">
+                     <a class="nav-link" href="../maintaince/maintenance.html">صيانة</a>
+                   
+                </li>
+
+                <li class="nav-item ">
+                    <a class="nav-link" href="../mission/mission.html">تعين مهمة</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="../costs/cost.html">تكاليف</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="../Seasons/Season.html">مواسم</a>
+                </li>
+                  <li class="nav-item  ">
+                    <a class="nav-link " href="../Diseases/Diseases.html">الامراض</a>
+                </li>
+            </ul>
+       
+        
+    </div>
+</nav>
+<!--بدايه اصناف المحصول-->
+<section class="content cropType">
+    <div class="top-bar">
+       
+        <h6> عمليات زراعية > عمليات مستديمة >  فصل الفسائل    </h6>  
+    </div>
+     <div class="row m-0">
+
+        <div class="col-sm-3 col-12 mt-3  " id="sidebar">
+
+            <div class="list-group panel">
+                <a href="#menu1" class="list-group-item collapsed" data-toggle="collapse" data-parent="#sidebar" aria-expanded="false"> <span class="hidden-sm-down">تجهيزات ماقبل الزراعه</span> </a>
+                <div class="collapse" id="menu1">
+                    <a href="#" class="list-group-item" data-parent="#menu1">Subitem 1 </a>
+
+                    <a href="#" class="list-group-item" data-parent="#menu1">Subitem 2</a>
+                    <a href="#" class="list-group-item" data-parent="#menu1">Subitem 3</a>
+                </div>
+                <a href="#" class="list-group-item collapsed" data-parent="#sidebar"><span class="hidden-sm-down">تجهيز الجودة</span></a>
+                <a href="#" class="list-group-item collapsed" data-parent="#sidebar"><span class="hidden-sm-down">غرس</span></a>
+                <a href="#" class="list-group-item collapsed" data-parent="#sidebar"><span class="hidden-sm-down">ري</span></a>
+                <a href="#" class="list-group-item collapsed" data-parent="#sidebar"><span class="hidden-sm-down">ري خلال مراحل الانتاج</span></a>
+                <a href="../fertilizing/fertilizing.js" class="list-group-item collapsed " data-parent="#sidebar"><span class="hidden-sm-down">تسميد</span></a>
+                <a href="#" class="list-group-item collapsed" data-parent="#sidebar"><span class="hidden-sm-down">مكافحه</span></a>
+                <a href="#menu3" class="list-group-item collapsed active" data-toggle="collapse" data-parent="#sidebar" aria-expanded="false"><span class="hidden-sm-down">عمليات مستديمه</span></a>
+                <div class="collapse" id="menu3">
+                    <a href="../fertilizing/permanent-operations-table.html" class="list-group-item" data-parent="#menu3">عمليات فصل الفسائل </a>
+                    <a href="../fertilizing/separation-operations-table.html" class="list-group-item active" data-parent="#menu3">فصل الفسائل</a>
+                    
+                </div>
+                <a href="../fertilizing/Harvest.html" class="list-group-item collapsed " data-parent="#sidebar"><span class="hidden-sm-down">حصاد</span></a>
+               </div>
+        </div>
+
+        <div class="col-sm-9 col-10"    >
+            <div class="Tparent" >
+
+       <div class="row ml-3 mr-3 mt-3 p-3 filter-search-box">
+           <div class="col-lg-10">
+
+                <div class="row filter-res">
+                    
+                  
+             
+                
+                      <div class="col-lg-8 col-sm-12 col-md-12 col-12">
+                               <div >
+               <label>التاريخ  :</label> 
+             </div> 
+          من <input type="date" class="type-date">
+                           الى <input type="date" class="type-date">
+             </div> 
+                   
+               
+              
+                 
+            </div>
+           
+              
+            
+           </div>
+         <div class="col-lg-2 mt-3 col-sm-4 col-md-4 col-12">
+                <label class="search-icon">  <input type="text" class="search" id="myInput"></label>
+        
+             </div> 
+      
+       </div>
+
+        <div class="row m-4">
+
+
+            <div class="float-left " >
+
+
+                <a href="separation-operations.html"><button class="add-crepto mr-2 mb-2 addNewRow" >اضافة عملية زراعية</button></a>
+
+
+
+            </div>
+
+        </div>
+
+        <div class="row m-3 justify-content-center ">
+            <div class="col-lg-10 ">
+
+                <table class="table zadnatable mainTable" tableId="11">
+                    <thead >
+                    <tr  >
+                        <th>الكود</th>
+                        <th>كود المربع </th>
+                        <th>النخل</th>
+                         <th > الصنف المزروع</th>
+                        <th>  عدد الفسائل</th>
+                        <th>   تاريخ الفصل</th>
+                       
+                        <th><i class="fas fa-bars"></i></th>
+
+                    </tr>
+                    </thead>
+                    <tbody>
+
+
+                    <tr rowId="1">
+                        <td>
+                            <div class="form-group InputGroup">
+                                <input type="text" class="form-control td-input" value="1" disabled>
+
+                            </div>
+                        </td>
+                        <td>
+                         <div class="form-group InputGroup">
+                                <input type="text" class="form-control td-input" value="مزارع" disabled>
+
+                            </div>
+                        </td>
+                        <td>
+                        <div class="form-group InputGroup">
+                                <input type="text" class="form-control  td-input" value="محاسب" disabled >
+
+                            </div>
+                        </td>
+                        <td>
+                         <div class="form-group InputGroup">
+                                <input type="text" class="form-control  td-input" value="مادونا" disabled >
+
+                            </div>
+                        </td>
+                        
+                        <td>
+                         <div class="form-group InputGroup">
+                                <input type="text" class="form-control  td-input" value="مادونا" disabled >
+
+                            </div>
+                        </td>
+                        <td>
+                         <div class="form-group InputGroup">
+                                <input type="text" class="form-control  td-input" value="2018-04-18" disabled >
+
+                            </div>
+                        </td>
+                       
+                        <td class="query-td">
+                           <i class="fas fa-trash-alt delete-icon" title="Delete"  data-toggle="modal" data-target="#deletemodal"></i>
+                           
+                            <i class="fas fa-eye view-row" title="View"  data-toggle="modal" data-target="#ViewModal"></i>
+                            
+                        </td>
+                       
+
+                    </tr>
+                   
+                    <tr rowId="2">
+                        <td>
+                            <div class="form-group InputGroup">
+                                <input type="text" class="form-control td-input" value="1" disabled>
+
+                            </div>
+                        </td>
+                        <td>
+                         <div class="form-group InputGroup">
+                                <input type="text" class="form-control td-input" value="مزارع" disabled>
+
+                            </div>
+                        </td>
+                        <td>
+                        <div class="form-group InputGroup">
+                                <input type="text" class="form-control  td-input" value="محاسب" disabled >
+
+                            </div>
+                        </td>
+                        <td>
+                         <div class="form-group InputGroup">
+                                <input type="text" class="form-control  td-input" value="مادونا" disabled >
+
+                            </div>
+                        </td>
+                        
+                        <td>
+                         <div class="form-group InputGroup">
+                                <input type="text" class="form-control  td-input" value="مادونا" disabled >
+
+                            </div>
+                        </td>
+                        <td>
+                         <div class="form-group InputGroup">
+                                <input type="text" class="form-control  td-input" value="2018-04-18" disabled >
+
+                            </div>
+                        </td>
+                       
+                        <td class="query-td">
+                           <i class="fas fa-trash-alt delete-icon" title="Delete"  data-toggle="modal" data-target="#deletemodal"></i>
+                           
+                            <i class="fas fa-eye view-row" title="View"  data-toggle="modal" data-target="#ViewModal"></i>
+                            
+                        </td>
+                       
+
+                    </tr>
+                   
+
+
+                </table></div>
+
+
+
+
+        </div>
+
+
+    </div>
+
+            
+        </div>
+    </div>
+    
+   
+   
+</section>
+
+
+<div id="deletemodal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content modalbg-add">
+            <div class="modal-header d-flex flex-row-reverse">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title ">حذف</h4>
+            </div>
+            <div class="modal-body">
+                <p>حذف نوع محصول؟</p>
+            </div>
+            <div class="modal-footer">
+                <a href="#" id="btnYes" data-dismiss="modal" class="danger btn btn-primary ">نعم</a>
+                <a href="#" data-dismiss="modal" aria-hidden="true" class="btn btn-danger ">لا</a>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<!-- Scripts -->
+<script src="../dist/jquery/jquery-3.3.1.min.js"></script>
+<script src="../dist/plugins/Export-Html-Table-To-Excel-Spreadsheet-using-jQuery-table2excel/dist/jquery.table2excel.js"></script>
+<script src="../dist/js/popper.min.js"></script>
+<script src="../dist/js/bootstrap4-rtl.js"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+<!--<script src="dist/plugins/datatables.net-bs/js/datatable.js"></script>-->
+<script src="../dist/plugins/neighbordog-jquery-paginate-cea0026/src/jquery.paginate.js"></script>
+<script src="../dist/js/datatable.js"></script>
+<script src="../dist/js/model.js"></script>  
+
+
+    <script src="../dist/js/tablesfunc.js"></script>
+<script src="../dist/js/maintenance-current.js"></script>
+    <!-- Select2 -->
+<script src="../dist/plugins/select2/select2.full.min.js"></script>
+    
+    
+<script>
+    
+    
+  $(function () {
+  
+    $(".select2").select2();
+
+
+    
+  });
+ $(function () {
+    $("#tags").select2({
+        maximumSelectionLength: 4,
+        formatSelectionTooBig: function (limit) {
+
+            // Callback
+
+            return 'Too many selected items';
+        }
+    });
+});
+    
+    $(document).ready(function () {
+
+    $(".mainTable tbody ").paginate({'perPage': 5});
+
+
+    $(document).on("click", ".addNewRow", function (){
+        var table = $(this).parents(".Tparent").find(".mainTable");
+        var modal=$("#ViewModal");
+        var editbtn=modal.find(".edit-btn")
+        var savebtn=modal.find(".save-btn");
+         savebtn.addClass("save-btn");
+         savebtn.removeClass("save-edit");
+         savebtn=modal.find(".save-btn");
+         savebtn.show();
+
+        editbtn.attr("hidden",true);
+        
+
+         modal.find(".form-control").attr("disabled",false);
+
+        modal.attr("currtable",table.attr("tableId"));
+        modal.find("input").val("");
+    });
+
+  
+
+
+    $(document).on("click", ".save-btn", function (){
+     
+        
+        var modal=$(this).parents(".modal");
+        var table=$("[tableid="+  modal.attr("currtable") +"]");
+        var TBody=table.find("tbody");
+        var ele="<i class=\"fas fa-eye view-row\" title=\"View\" data-toggle=\"modal\" data-target=\"#ViewModal\"></i>";
+            
+
+
+        var cellsNum=table.find("th").length;
+        var inputs=modal.find(".col-val");
+        
+          var inputsVal=[];
+
+        for(var i=0 ; i<inputs.length;i++){
+            inputsVal[i]=inputs[i].value ;
+            console.log(inputs,"gggggggg",inputsVal[i].value);
+        }
+
+
+    
+            addRow(TBody ,cellsNum , inputsVal,ele," ");
+
+         
+
+        modal.modal("hide");
+        TBody.data('paginate').kill();
+        TBody.paginate({'perPage': 5});
+
+    });
+
+
+    $(document).on("click",".view-row",function () {
+        var row=$(this).parents("tr");
+        var cells=row.find("td input");
+        var sLoc=$("#ViewModal").find( "select.col-val").select2();
+
+        var inLoc=$("#ViewModal").find( "input.col-val");
+
+        var Rowid=row.attr("rowid");
+        $(".modal").attr("viewrow",Rowid);
+
+        $("#ViewModal").find(".form-control").attr("disabled",true);
+
+        $(".save-btn").hide();
+        $(".save-edit").hide();
+        $(".edit-btn").attr("hidden",false);
+
+        ViewRow(cells,sLoc,inLoc);
+
+    }) ;
+
+
+    $(document).on("click",".edit-btn",function () {
+        var modal=$(this).parents(".modal");
+       var savebtn=modal.find(".save-btn");
+         savebtn.addClass("save-edit");
+         savebtn.removeClass("save-btn");
+         savebtn=modal.find(".save-edit");
+
+        modal.find(".form-control").attr("disabled",false);
+        savebtn.show();
+        $(this).attr("hidden",true);
+        
+  $(document).on("click",".save-edit",function () {
+            saveEdit(modal);
+            savebtn.addClass("save-btn");
+            savebtn.removeClass("save-edit");
+
+        })
+
+
+    })
+
+
+
+});
+ 
+   
+    </script>
+</body>
+</html>

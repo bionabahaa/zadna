@@ -1,0 +1,74 @@
+
+.dashboard-side{
+    overflow: hidden;
+
+}
+
+.dashboard-side .content{
+    overflow: hidden;
+    overflow-y: scroll;
+    height: 361px;
+    /* border-radius: 0; */
+}
+
+.task-list{
+    padding: 0 18px;
+}
+.task-list li {
+    display: block;
+    padding:0;
+    margin: 0;
+    cursor: pointer;
+}
+.task-list li .task-details p {
+    margin: 0 42px;
+    padding: 10px 0 6px 0;
+    line-height: 140%;
+}
+
+.task-list li .task-details a.title {
+    padding: 0;
+    margin: 0;
+    font-size: .75rem;
+}
+
+.task-list li .task-details small{
+    margin: 0 42px;
+}
+
+.task-list li.list .fa-hourglass-start {
+    float: right;
+    margin-top: 50px;
+    color: #E8AC37;
+    font-size: 24px;
+    margin-left: 20px;
+}
+
+
+
+/* .task-list li.list span:before {
+    margin-right: 10px;
+    font-size: .75rem;
+    content: "\e5ca";
+    font-family: 'fontawsome';
+    vertical-align: middle;
+    border: 2px solid #8796af;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    padding: 3px;
+} */
+
+
+
+
+
+.task-list li:first-child {
+    padding-top: 0;
+}
+
+
+.dashboard-side table td
+{
+    /*border:*/
+}

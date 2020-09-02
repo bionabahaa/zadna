@@ -1,0 +1,59 @@
+.main-card{
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    padding: 9px;
+    height: 127px;
+    border: 1px solid #301d0c4f;
+    overflow: hidden;
+    margin-bottom: 20px;
+    box-shadow: 2px 4px 5px 0px #00000052;
+}
+
+.main-card-num{
+    display: inline-block;
+    background: #58b82a;;
+    padding: 2px 15px;
+    border-radius: 10em!important;
+    color: whitesmoke;
+    vertical-align: middle;
+
+}
+
+.thin-card{
+    height: 220px;
+}
+
+.wide-card{ 
+    height: 220px;
+}
+
+.wide-card.heigher-card{ 
+    height: 329px;
+}
+.avg-block {
+    margin-bottom: 27px;
+}
+
+.avg-block h3.avg-total {
+    margin: 0;
+    color:#58b82a;
+}
+
+.avg-block h6.avg-label{
+    margin: auto;
+    color: #0000009e;
+}
+
+.avg-block h6 {
+    font-size: 95%;
+    margin: 15px 20px 35px 20px;
+    line-height: 150%;
+}
+
+.avg-block .avg-title{
+    border-bottom: 1px solid gainsboro;
+    padding-bottom: 19px;
+}
+
+.main-card .progress{ 
+    height: 21px !important;}

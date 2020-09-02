@@ -1,0 +1,22 @@
+    $data=Planting::orderBy('created_at','desc');
+        if($req->status){
+            switch ($req->status){
+                case 'all':
+                    $data=$data;
+                    break;
+                case 1:
+                    $data = Planting::where('type_id',1);
+                    break;
+                case 2:
+                    $data =Planting::where('type_id',2);
+                    break;
+            }
+
+        }
+        if($req->date_from){
+            $data =$data->whereDate('created_at','>=',date('Y-m-d',strtotime($req->date_from)));
+        }
+        if($req->date_to){
+            $data =$data->where('created_at','<=',date('Y-m-d',strtotime($req->date_to)));
+        }
+        $data =$data->get();
